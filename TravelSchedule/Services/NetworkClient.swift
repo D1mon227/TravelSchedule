@@ -17,7 +17,7 @@ final class NetworkClient: NetworkClientProtocol {
         transport: URLSessionTransport()
     )
     
-    private let apikey = Resources.apiKey.apiKey
+    private let apikey = Resources.apiKey
     
     func getNearestStations(lat: Double, lng: Double, distance: Int) async throws -> NearestStations {
         let response = try await client.getNearestStations(
