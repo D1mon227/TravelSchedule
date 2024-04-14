@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SplashView: View {
+struct SplashScreenView: View {
     @State private var showSplash = false
     
     var body: some View {
@@ -8,7 +8,7 @@ struct SplashView: View {
             if showSplash {
                 ContentView()
             } else {
-                Image("SplashScreen")
+                Image(.splashScreen)
                     .resizable()
                     .ignoresSafeArea()
             }
@@ -24,5 +24,5 @@ struct SplashView: View {
 }
 
 #Preview {
-    SplashView()
+    SplashScreenView()
 }
