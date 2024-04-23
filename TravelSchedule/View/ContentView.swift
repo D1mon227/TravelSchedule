@@ -6,38 +6,29 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            MainScreenView()
-                .tabItem {
-                    Image(selectedTab == 0 ? .selectedTabBarItem1 : .tabBarItem1)
-                }
-                .tag(0)
-            SettingsScreenView()
-                .tabItem {
-                    Image(selectedTab == 1 ? .selectedTabBarItem2 : .tabBarItem2)
-                }
-                .tag(1)
+            
+            VStack(spacing: 0) {
+                MainScreenView()
+                Spacer()
+                Divider()
+            }
+            .tabItem {
+                Image(selectedTab == 0 ? .selectedTabBarItem1 : .tabBarItem1)
+            }
+            .tag(0)
+            .padding(.bottom, 10)
+            
+            VStack {
+                SettingsScreenView()
+                Divider()
+            }
+            .tabItem {
+                Image(selectedTab == 1 ? .selectedTabBarItem2 : .tabBarItem2)
+            }
+            .tag(1)
+            .padding(.bottom, 10)
         }
         .background(Color.whiteUniversal)
-        
-//        VStack {
-//            CustomButton(action: getNearestStations,
-//                         text: "Получить ближайшие станции")
-//            CustomButton(action: getScheduleBetweenStations,
-//                         text: "Показать расписание между станциями")
-//            CustomButton(action: getStationSchedule,
-//                         text: "Показать расписание по станции")
-//            CustomButton(action: getThreadList,
-//                         text: "Показать список станций следования")
-//            CustomButton(action: getNearestSettlement,
-//                         text: "Показать ближайший город")
-//            CustomButton(action: getCarrierInformation,
-//                         text: "Показать информацию о перевозчике")
-//            CustomButton(action: getAllStations,
-//                         text: "Показать все станции")
-//            CustomButton(action: getCopyright,
-//                         text: "Показать Копирайт")
-//        }
-//        .padding()
     }
     
     func getNearestStations() {

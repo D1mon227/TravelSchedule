@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0705F7D62BD805B800785A26 /* SwitchDirectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705F7D52BD805B800785A26 /* SwitchDirectionButton.swift */; };
+		0705F7E02BD814B600785A26 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0705F7DF2BD814B600785A26 /* Launch Screen.storyboard */; };
 		070D505F2BA0AA5E003A90B2 /* openapi-generator-config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 070D505E2BA0AA5E003A90B2 /* openapi-generator-config.yaml */; };
 		07493AC92BA5E006000281E7 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07493AC82BA5E006000281E7 /* Resources.swift */; };
 		07493ACC2BA5E091000281E7 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07493ACB2BA5E091000281E7 /* NetworkClient.swift */; };
@@ -14,12 +16,11 @@
 		07493ADA2BA5E808000281E7 /* OpenAPIRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 07493AD92BA5E808000281E7 /* OpenAPIRuntime */; };
 		07493ADD2BA5E812000281E7 /* OpenAPIURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = 07493ADC2BA5E812000281E7 /* OpenAPIURLSession */; };
 		07493ADF2BA5E931000281E7 /* openapi.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 07493ADE2BA5E931000281E7 /* openapi.yaml */; };
-		074FE5ED2BCBCD3D006C65E6 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE5EC2BCBCD3D006C65E6 /* SplashScreenView.swift */; };
 		074FE5F12BCBDD68006C65E6 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE5F02BCBDD68006C65E6 /* MainScreenView.swift */; };
 		074FE5F42BCBDD79006C65E6 /* SettingsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE5F32BCBDD79006C65E6 /* SettingsScreenView.swift */; };
 		074FE5FD2BCBE5AD006C65E6 /* Font + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE5FC2BCBE5AD006C65E6 /* Font + Extensions.swift */; };
 		074FE6032BCBE8F4006C65E6 /* DirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE6022BCBE8F4006C65E6 /* DirectionView.swift */; };
-		074FE6062BCBE967006C65E6 /* DirectionTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE6052BCBE967006C65E6 /* DirectionTextFieldView.swift */; };
+		074FE6062BCBE967006C65E6 /* DirectionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE6052BCBE967006C65E6 /* DirectionTextView.swift */; };
 		074FE60A2BCBEAB5006C65E6 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE6092BCBEAB5006C65E6 /* MainScreenViewModel.swift */; };
 		07EB612A2B94861400407959 /* TravelScheduleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB61292B94861400407959 /* TravelScheduleApp.swift */; };
 		07EB612C2B94861400407959 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB612B2B94861400407959 /* ContentView.swift */; };
@@ -28,17 +29,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0705F7D52BD805B800785A26 /* SwitchDirectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchDirectionButton.swift; sourceTree = "<group>"; };
+		0705F7DF2BD814B600785A26 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		070D505E2BA0AA5E003A90B2 /* openapi-generator-config.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "openapi-generator-config.yaml"; sourceTree = "<group>"; };
 		07493AC82BA5E006000281E7 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		07493ACB2BA5E091000281E7 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		07493ACD2BA5E0CA000281E7 /* NetworkClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientProtocol.swift; sourceTree = "<group>"; };
 		07493ADE2BA5E931000281E7 /* openapi.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = openapi.yaml; sourceTree = "<group>"; };
-		074FE5EC2BCBCD3D006C65E6 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		074FE5F02BCBDD68006C65E6 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		074FE5F32BCBDD79006C65E6 /* SettingsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenView.swift; sourceTree = "<group>"; };
 		074FE5FC2BCBE5AD006C65E6 /* Font + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font + Extensions.swift"; sourceTree = "<group>"; };
 		074FE6022BCBE8F4006C65E6 /* DirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionView.swift; sourceTree = "<group>"; };
-		074FE6052BCBE967006C65E6 /* DirectionTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionTextFieldView.swift; sourceTree = "<group>"; };
+		074FE6052BCBE967006C65E6 /* DirectionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionTextView.swift; sourceTree = "<group>"; };
 		074FE6092BCBEAB5006C65E6 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
 		07EB61262B94861400407959 /* TravelSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EB61292B94861400407959 /* TravelScheduleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelScheduleApp.swift; sourceTree = "<group>"; };
@@ -60,6 +62,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0705F7D42BD8059D00785A26 /* DirectionView */ = {
+			isa = PBXGroup;
+			children = (
+				074FE6022BCBE8F4006C65E6 /* DirectionView.swift */,
+				074FE6052BCBE967006C65E6 /* DirectionTextView.swift */,
+				0705F7D52BD805B800785A26 /* SwitchDirectionButton.swift */,
+			);
+			path = DirectionView;
+			sourceTree = "<group>";
+		};
+		0705F7E62BD822B200785A26 /* Cities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cities;
+			sourceTree = "<group>";
+		};
 		07493AC52BA5DF9F000281E7 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +110,6 @@
 			children = (
 				07EB61292B94861400407959 /* TravelScheduleApp.swift */,
 				07EB612B2B94861400407959 /* ContentView.swift */,
-				074FE5EC2BCBCD3D006C65E6 /* SplashScreenView.swift */,
 				074FE5FF2BCBE8B0006C65E6 /* MainScreen */,
 				074FE6012BCBE8DE006C65E6 /* SettingsScreen */,
 			);
@@ -109,8 +127,8 @@
 		074FE5FF2BCBE8B0006C65E6 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
-				074FE6022BCBE8F4006C65E6 /* DirectionView.swift */,
-				074FE6052BCBE967006C65E6 /* DirectionTextFieldView.swift */,
+				0705F7E62BD822B200785A26 /* Cities */,
+				0705F7D42BD8059D00785A26 /* DirectionView */,
 				074FE5F02BCBDD68006C65E6 /* MainScreenView.swift */,
 				074FE6092BCBEAB5006C65E6 /* MainScreenViewModel.swift */,
 			);
@@ -149,6 +167,7 @@
 				07493AC72BA5DFD0000281E7 /* Resources */,
 				07493AC52BA5DF9F000281E7 /* Generated */,
 				074FE5F82BCBE58F006C65E6 /* Extensions */,
+				0705F7DF2BD814B600785A26 /* Launch Screen.storyboard */,
 				07EB612D2B94861600407959 /* Assets.xcassets */,
 				07EB612F2B94861600407959 /* Preview Content */,
 			);
@@ -234,6 +253,7 @@
 				07EB61312B94861600407959 /* Preview Assets.xcassets in Resources */,
 				070D505F2BA0AA5E003A90B2 /* openapi-generator-config.yaml in Resources */,
 				07EB612E2B94861600407959 /* Assets.xcassets in Resources */,
+				0705F7E02BD814B600785A26 /* Launch Screen.storyboard in Resources */,
 				07493ADF2BA5E931000281E7 /* openapi.yaml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,10 +272,10 @@
 				07EB612C2B94861400407959 /* ContentView.swift in Sources */,
 				074FE60A2BCBEAB5006C65E6 /* MainScreenViewModel.swift in Sources */,
 				074FE5FD2BCBE5AD006C65E6 /* Font + Extensions.swift in Sources */,
-				074FE6062BCBE967006C65E6 /* DirectionTextFieldView.swift in Sources */,
+				074FE6062BCBE967006C65E6 /* DirectionTextView.swift in Sources */,
+				0705F7D62BD805B800785A26 /* SwitchDirectionButton.swift in Sources */,
 				07EB612A2B94861400407959 /* TravelScheduleApp.swift in Sources */,
 				07493ACE2BA5E0CA000281E7 /* NetworkClientProtocol.swift in Sources */,
-				074FE5ED2BCBCD3D006C65E6 /* SplashScreenView.swift in Sources */,
 				074FE5F42BCBDD79006C65E6 /* SettingsScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,12 +420,14 @@
 				DEVELOPMENT_TEAM = 6FKSY32YRW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelSchedule/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,12 +456,14 @@
 				DEVELOPMENT_TEAM = 6FKSY32YRW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelSchedule/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

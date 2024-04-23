@@ -33,8 +33,6 @@ struct SettingsScreenView: View {
             .foregroundStyle(.blackUniversal)
             .font(.regular12)
             .padding(.bottom, 24)
-            
-            Divider()
         }
         .padding(.top, 24)
         .padding(.horizontal, 16)
