@@ -2,6 +2,7 @@ import SwiftUI
 
 enum NavigationFlow: String {
     case cities = "Cities"
+    case stations = "Stations"
 }
 
 struct ContentView: View {
@@ -38,9 +39,12 @@ struct ContentView: View {
             }
             .environmentObject(viewModel)
             .navigationDestination(for: NavigationFlow.self) { id in
-                switch (id) {
+                switch id {
                 case .cities:
                     CitiesView(path: $path)
+                        .environmentObject(viewModel)
+                case .stations:
+                    StationsView(path: $path)
                         .environmentObject(viewModel)
                 }
             }

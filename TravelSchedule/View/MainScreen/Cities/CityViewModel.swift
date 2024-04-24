@@ -11,9 +11,9 @@ final class CityViewModel: ObservableObject {
     
     func onTextChanged(_ text: String) {
         if text.isEmpty {
-            self.filteredCities = cities
+            filteredCities = cities
         } else {
-            self.filteredCities = cities.filter { $0.name.lowercased().contains(text.lowercased()) }
+            filteredCities = cities.filter { $0.name.lowercased().contains(text.lowercased()) }
         }
     }
     

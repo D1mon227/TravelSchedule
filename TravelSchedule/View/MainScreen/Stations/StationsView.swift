@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct CitiesView: View {
-    @StateObject var viewModel = CityViewModel()
+struct StationsView: View {
+    @StateObject var viewModel = StationViewModel()
     @State var searchText: String = ""
     @Binding var path: [NavigationFlow]
     
@@ -34,15 +34,12 @@ struct CitiesView: View {
             
             ScrollView(showsIndicators: false) {
                 LazyVStack(spacing: 0) {
-                    ForEach(viewModel.filteredCities) { city in
-                        CityRowView(city: city)
-                    }
-                    .onTapGesture {
-                        path.append(.stations)
+                    ForEach(viewModel.filteredStations) { station in
+                        StationRowView(station: station)
                     }
                 }
-                if viewModel.filteredCities.isEmpty {
-                    Text("Город не найден")
+                if viewModel.filteredStations.isEmpty {
+                    Text("Станция не найдена")
                         .font(.bold24)
                         .foregroundStyle(.blackUniversal)
                         .padding(.top, 192)
@@ -50,20 +47,22 @@ struct CitiesView: View {
             }
         }
         .padding(.horizontal, 16)
-        .navigationTitle("Выбор города").navigationBarTitleDisplayMode(.inline)
+        .navigationTitle("Выбор станции").navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
-                Button(action: {
-                    self.path.removeLast()
-                }, label: {
-                    Image(.chevronBack)
-                })
+                Button(
+                    action: {
+                        path.removeLast()
+                    }, label: {
+                        Image(.chevronBack)
+                    }
+                )
             }
         }
     }
 }
 
 #Preview {
-    CitiesView(path: .constant([]))
+    StationsView(path: .constant([]))
 }
