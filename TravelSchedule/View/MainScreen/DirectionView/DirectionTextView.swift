@@ -1,12 +1,7 @@
 import SwiftUI
 
-enum Direction: Hashable {
-    case from
-    case to
-}
-
 struct DirectionTextView: View {
-    @EnvironmentObject var viewModel: MainScreenViewModel
+    @StateObject var viewModel = MainScreenViewModel()
     
     var direction: Direction
     
@@ -15,6 +10,7 @@ struct DirectionTextView: View {
         let directionText = direction == .from ? viewModel.fromDirection : viewModel.toDirection
         
         Text(directionText == "" ? placeholder : directionText)
+        
             .frame(maxWidth: .infinity,
                    minHeight: 48,
                    alignment: .leading)

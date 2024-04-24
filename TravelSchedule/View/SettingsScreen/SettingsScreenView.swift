@@ -19,7 +19,7 @@ struct SettingsScreenView: View {
                     .foregroundStyle(.blackUniversal)
                     .font(.regular17)
                 Spacer()
-                Image(.chevron)
+                Image(.chevronForward)
                     .frame(width: 24, height: 24)
             }
             .frame(height: 60)

@@ -1,34 +1,50 @@
 import SwiftUI
 
+enum NavigationFlow: String {
+    case cities = "Cities"
+}
+
 struct ContentView: View {
     private let networkClient = NetworkClient()
+    
+    @StateObject var viewModel = MainScreenViewModel()
     @State private var selectedTab = 0
+    @State private var path: [NavigationFlow] = []
     
     var body: some View {
-        TabView(selection: $selectedTab) {
-            
-            VStack(spacing: 0) {
-                MainScreenView()
-                Spacer()
-                Divider()
+        NavigationStack(path: $path) {
+            TabView(selection: $selectedTab) {
+                VStack(spacing: 0) {
+                    MainScreenView(path: $path)
+                        .environmentObject(viewModel)
+                    Spacer()
+                    Divider()
+                }
+                .tabItem {
+                    Image(selectedTab == 0 ? .selectedTabBarItem1 : .tabBarItem1)
+                }
+                .tag(0)
+                .padding(.bottom, 10)
+                
+                VStack {
+                    SettingsScreenView()
+                    Divider()
+                }
+                .tabItem {
+                    Image(selectedTab == 1 ? .selectedTabBarItem2 : .tabBarItem2)
+                }
+                .tag(1)
+                .padding(.bottom, 10)
             }
-            .tabItem {
-                Image(selectedTab == 0 ? .selectedTabBarItem1 : .tabBarItem1)
+            .environmentObject(viewModel)
+            .navigationDestination(for: NavigationFlow.self) { id in
+                switch (id) {
+                case .cities:
+                    CitiesView(path: $path)
+                        .environmentObject(viewModel)
+                }
             }
-            .tag(0)
-            .padding(.bottom, 10)
-            
-            VStack {
-                SettingsScreenView()
-                Divider()
-            }
-            .tabItem {
-                Image(selectedTab == 1 ? .selectedTabBarItem2 : .tabBarItem2)
-            }
-            .tag(1)
-            .padding(.bottom, 10)
         }
-        .background(Color.whiteUniversal)
     }
     
     func getNearestStations() {
