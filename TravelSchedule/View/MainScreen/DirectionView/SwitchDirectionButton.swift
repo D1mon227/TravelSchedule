@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct SwitchDirectionButton: View {
-    @StateObject var viewModel = MainScreenViewModel()
+    @EnvironmentObject var viewModel: MainScreenViewModel
     
     var body: some View {
         Button {

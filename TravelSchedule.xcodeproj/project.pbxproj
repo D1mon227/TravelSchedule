@@ -17,7 +17,12 @@
 		0705F8092BD98E5600785A26 /* StationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705F8082BD98E5600785A26 /* StationRowView.swift */; };
 		0705F80C2BD9903200785A26 /* StationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705F80B2BD9903200785A26 /* StationsView.swift */; };
 		0705F8102BD9906A00785A26 /* StationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705F80F2BD9906A00785A26 /* StationViewModel.swift */; };
+		0705F8222BDA902700785A26 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705F8212BDA902700785A26 /* MainScreenViewModel.swift */; };
 		070D505F2BA0AA5E003A90B2 /* openapi-generator-config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 070D505E2BA0AA5E003A90B2 /* openapi-generator-config.yaml */; };
+		073EAECF2BDBF99900170FE0 /* Carrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073EAECE2BDBF99900170FE0 /* Carrier.swift */; };
+		073EAED32BDBFDF100170FE0 /* CarriersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073EAED22BDBFDF100170FE0 /* CarriersView.swift */; };
+		073EAED52BDBFE0500170FE0 /* CarrierRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073EAED42BDBFE0500170FE0 /* CarrierRowView.swift */; };
+		073EAED72BDBFF7900170FE0 /* CarrierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073EAED62BDBFF7900170FE0 /* CarrierViewModel.swift */; };
 		07493AC92BA5E006000281E7 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07493AC82BA5E006000281E7 /* Resources.swift */; };
 		07493ACC2BA5E091000281E7 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07493ACB2BA5E091000281E7 /* NetworkClient.swift */; };
 		07493ACE2BA5E0CA000281E7 /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07493ACD2BA5E0CA000281E7 /* NetworkClientProtocol.swift */; };
@@ -29,7 +34,7 @@
 		074FE5FD2BCBE5AD006C65E6 /* Font + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE5FC2BCBE5AD006C65E6 /* Font + Extensions.swift */; };
 		074FE6032BCBE8F4006C65E6 /* DirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE6022BCBE8F4006C65E6 /* DirectionView.swift */; };
 		074FE6062BCBE967006C65E6 /* DirectionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE6052BCBE967006C65E6 /* DirectionTextView.swift */; };
-		074FE60A2BCBEAB5006C65E6 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE6092BCBEAB5006C65E6 /* MainScreenViewModel.swift */; };
+		074FE60A2BCBEAB5006C65E6 /* ScheduleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE6092BCBEAB5006C65E6 /* ScheduleRouter.swift */; };
 		07EB612A2B94861400407959 /* TravelScheduleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB61292B94861400407959 /* TravelScheduleApp.swift */; };
 		07EB612C2B94861400407959 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB612B2B94861400407959 /* ContentView.swift */; };
 		07EB612E2B94861600407959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07EB612D2B94861600407959 /* Assets.xcassets */; };
@@ -47,7 +52,12 @@
 		0705F8082BD98E5600785A26 /* StationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRowView.swift; sourceTree = "<group>"; };
 		0705F80B2BD9903200785A26 /* StationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsView.swift; sourceTree = "<group>"; };
 		0705F80F2BD9906A00785A26 /* StationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModel.swift; sourceTree = "<group>"; };
+		0705F8212BDA902700785A26 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
 		070D505E2BA0AA5E003A90B2 /* openapi-generator-config.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "openapi-generator-config.yaml"; sourceTree = "<group>"; };
+		073EAECE2BDBF99900170FE0 /* Carrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carrier.swift; sourceTree = "<group>"; };
+		073EAED22BDBFDF100170FE0 /* CarriersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarriersView.swift; sourceTree = "<group>"; };
+		073EAED42BDBFE0500170FE0 /* CarrierRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierRowView.swift; sourceTree = "<group>"; };
+		073EAED62BDBFF7900170FE0 /* CarrierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierViewModel.swift; sourceTree = "<group>"; };
 		07493AC82BA5E006000281E7 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		07493ACB2BA5E091000281E7 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		07493ACD2BA5E0CA000281E7 /* NetworkClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientProtocol.swift; sourceTree = "<group>"; };
@@ -57,7 +67,7 @@
 		074FE5FC2BCBE5AD006C65E6 /* Font + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font + Extensions.swift"; sourceTree = "<group>"; };
 		074FE6022BCBE8F4006C65E6 /* DirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionView.swift; sourceTree = "<group>"; };
 		074FE6052BCBE967006C65E6 /* DirectionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionTextView.swift; sourceTree = "<group>"; };
-		074FE6092BCBEAB5006C65E6 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		074FE6092BCBEAB5006C65E6 /* ScheduleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRouter.swift; sourceTree = "<group>"; };
 		07EB61262B94861400407959 /* TravelSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EB61292B94861400407959 /* TravelScheduleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelScheduleApp.swift; sourceTree = "<group>"; };
 		07EB612B2B94861400407959 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,7 +103,6 @@
 			children = (
 				0705F7F02BD824A900785A26 /* CitiesView.swift */,
 				0705F7E82BD8237400785A26 /* CityRowView.swift */,
-				0705F7F22BD824D200785A26 /* CityViewModel.swift */,
 			);
 			path = Cities;
 			sourceTree = "<group>";
@@ -103,6 +112,7 @@
 			children = (
 				0705F7ED2BD8246200785A26 /* City.swift */,
 				0705F8042BD98E0000785A26 /* Station.swift */,
+				073EAECE2BDBF99900170FE0 /* Carrier.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,9 +122,36 @@
 			children = (
 				0705F80B2BD9903200785A26 /* StationsView.swift */,
 				0705F8082BD98E5600785A26 /* StationRowView.swift */,
-				0705F80F2BD9906A00785A26 /* StationViewModel.swift */,
 			);
 			path = Stations;
+			sourceTree = "<group>";
+		};
+		0705F8152BD9AD5800785A26 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0705F7F22BD824D200785A26 /* CityViewModel.swift */,
+				0705F80F2BD9906A00785A26 /* StationViewModel.swift */,
+				0705F8212BDA902700785A26 /* MainScreenViewModel.swift */,
+				073EAED62BDBFF7900170FE0 /* CarrierViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0705F81E2BD9B06700785A26 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				074FE6092BCBEAB5006C65E6 /* ScheduleRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		073EAED12BDBFC0B00170FE0 /* Carriers */ = {
+			isa = PBXGroup;
+			children = (
+				073EAED22BDBFDF100170FE0 /* CarriersView.swift */,
+				073EAED42BDBFE0500170FE0 /* CarrierRowView.swift */,
+			);
+			path = Carriers;
 			sourceTree = "<group>";
 		};
 		07493AC52BA5DF9F000281E7 /* Generated */ = {
@@ -146,9 +183,10 @@
 		074FE5EB2BCBCC2E006C65E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				07EB61292B94861400407959 /* TravelScheduleApp.swift */,
-				07EB612B2B94861400407959 /* ContentView.swift */,
 				074FE5FF2BCBE8B0006C65E6 /* MainScreen */,
+				0705F8072BD98E3500785A26 /* Stations */,
+				0705F7E62BD822B200785A26 /* Cities */,
+				073EAED12BDBFC0B00170FE0 /* Carriers */,
 				074FE6012BCBE8DE006C65E6 /* SettingsScreen */,
 			);
 			path = View;
@@ -165,11 +203,8 @@
 		074FE5FF2BCBE8B0006C65E6 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
-				0705F8072BD98E3500785A26 /* Stations */,
-				0705F7E62BD822B200785A26 /* Cities */,
 				0705F7D42BD8059D00785A26 /* DirectionView */,
 				074FE5F02BCBDD68006C65E6 /* MainScreenView.swift */,
-				074FE6092BCBEAB5006C65E6 /* MainScreenViewModel.swift */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
@@ -201,8 +236,12 @@
 		07EB61282B94861400407959 /* TravelSchedule */ = {
 			isa = PBXGroup;
 			children = (
+				07EB61292B94861400407959 /* TravelScheduleApp.swift */,
+				07EB612B2B94861400407959 /* ContentView.swift */,
+				0705F81E2BD9B06700785A26 /* Router */,
 				0705F7EA2BD8245500785A26 /* Model */,
 				074FE5EB2BCBCC2E006C65E6 /* View */,
+				0705F8152BD9AD5800785A26 /* ViewModel */,
 				07493ACA2BA5E067000281E7 /* Services */,
 				07493AC72BA5DFD0000281E7 /* Resources */,
 				07493AC52BA5DF9F000281E7 /* Generated */,
@@ -307,17 +346,22 @@
 			files = (
 				074FE6032BCBE8F4006C65E6 /* DirectionView.swift in Sources */,
 				07493ACC2BA5E091000281E7 /* NetworkClient.swift in Sources */,
+				073EAED52BDBFE0500170FE0 /* CarrierRowView.swift in Sources */,
 				07493AC92BA5E006000281E7 /* Resources.swift in Sources */,
+				073EAED32BDBFDF100170FE0 /* CarriersView.swift in Sources */,
 				0705F7F32BD824D200785A26 /* CityViewModel.swift in Sources */,
 				074FE5F12BCBDD68006C65E6 /* MainScreenView.swift in Sources */,
 				07EB612C2B94861400407959 /* ContentView.swift in Sources */,
 				0705F7F12BD824A900785A26 /* CitiesView.swift in Sources */,
-				074FE60A2BCBEAB5006C65E6 /* MainScreenViewModel.swift in Sources */,
+				074FE60A2BCBEAB5006C65E6 /* ScheduleRouter.swift in Sources */,
+				0705F8222BDA902700785A26 /* MainScreenViewModel.swift in Sources */,
 				0705F8092BD98E5600785A26 /* StationRowView.swift in Sources */,
 				0705F7EE2BD8246200785A26 /* City.swift in Sources */,
 				074FE5FD2BCBE5AD006C65E6 /* Font + Extensions.swift in Sources */,
 				074FE6062BCBE967006C65E6 /* DirectionTextView.swift in Sources */,
 				0705F80C2BD9903200785A26 /* StationsView.swift in Sources */,
+				073EAED72BDBFF7900170FE0 /* CarrierViewModel.swift in Sources */,
+				073EAECF2BDBF99900170FE0 /* Carrier.swift in Sources */,
 				0705F7E92BD8237400785A26 /* CityRowView.swift in Sources */,
 				0705F7D62BD805B800785A26 /* SwitchDirectionButton.swift in Sources */,
 				0705F8102BD9906A00785A26 /* StationViewModel.swift in Sources */,

@@ -1,54 +1,28 @@
 import SwiftUI
 
-enum NavigationFlow: String {
-    case cities = "Cities"
-    case stations = "Stations"
-}
-
 struct ContentView: View {
     private let networkClient = NetworkClient()
     
-    @StateObject var viewModel = MainScreenViewModel()
-    @State private var selectedTab = 0
-    @State private var path: [NavigationFlow] = []
-    
     var body: some View {
-        NavigationStack(path: $path) {
-            TabView(selection: $selectedTab) {
-                VStack(spacing: 0) {
-                    MainScreenView(path: $path)
-                        .environmentObject(viewModel)
-                    Spacer()
-                    Divider()
-                }
-                .tabItem {
-                    Image(selectedTab == 0 ? .selectedTabBarItem1 : .tabBarItem1)
-                }
-                .tag(0)
-                .padding(.bottom, 10)
-                
-                VStack {
-                    SettingsScreenView()
-                    Divider()
-                }
-                .tabItem {
-                    Image(selectedTab == 1 ? .selectedTabBarItem2 : .tabBarItem2)
-                }
-                .tag(1)
-                .padding(.bottom, 10)
-            }
-            .environmentObject(viewModel)
-            .navigationDestination(for: NavigationFlow.self) { id in
-                switch id {
-                case .cities:
-                    CitiesView(path: $path)
-                        .environmentObject(viewModel)
-                case .stations:
-                    StationsView(path: $path)
-                        .environmentObject(viewModel)
-                }
-            }
+        VStack {
+            CustomButton(action: getNearestStations,
+                         text: "Получить ближайшие станции")
+            CustomButton(action: getScheduleBetweenStations,
+                         text: "Показать расписание между станциями")
+            CustomButton(action: getStationSchedule,
+                         text: "Показать расписание по станции")
+            CustomButton(action: getThreadList,
+                         text: "Показать список станций следования")
+            CustomButton(action: getNearestSettlement,
+                         text: "Показать ближайший город")
+            CustomButton(action: getCarrierInformation,
+                         text: "Показать информацию о перевозчике")
+            CustomButton(action: getAllStations,
+                         text: "Показать все станции")
+            CustomButton(action: getCopyright,
+                         text: "Показать Копирайт")
         }
+        .padding()
     }
     
     func getNearestStations() {

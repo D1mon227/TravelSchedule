@@ -1,7 +1,15 @@
 import SwiftUI
 
+enum Direction {
+    case from
+    case to
+}
+
 struct DirectionTextView: View {
-    @StateObject var viewModel = MainScreenViewModel()
+    @EnvironmentObject var router: ScheduleRouter
+    @EnvironmentObject var viewModel: MainScreenViewModel
+    
+//    @Binding var directionText: String
     
     var direction: Direction
     
@@ -10,7 +18,6 @@ struct DirectionTextView: View {
         let directionText = direction == .from ? viewModel.fromDirection : viewModel.toDirection
         
         Text(directionText == "" ? placeholder : directionText)
-        
             .frame(maxWidth: .infinity,
                    minHeight: 48,
                    alignment: .leading)
@@ -18,6 +25,9 @@ struct DirectionTextView: View {
             .foregroundStyle(directionText == "" ? .grayUniversal : .blackUniversal)
             .lineLimit(1)
             .font(.regular17)
+            .onTapGesture {
+                router.path.append(ScheduleRouter.NavigationFlow.cities(direction))
+            }
     }
 }
 

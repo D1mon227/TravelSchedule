@@ -1,9 +1,12 @@
 import SwiftUI
 
-struct StationsView: View {
-    @StateObject var viewModel = StationViewModel()
+struct CitiesView: View {
+    @EnvironmentObject var router: ScheduleRouter
+    @ObservedObject var viewModel: CityViewModel
     @State var searchText: String = ""
-    @Binding var path: [NavigationFlow]
+    
+    @Binding var cityName: String
+    var direction: Direction
     
     var body: some View {
         VStack {
@@ -32,37 +35,52 @@ struct StationsView: View {
             .background(Color.lightGrayUniversal)
             .clipShape(RoundedRectangle(cornerRadius: 10))
             
-            ScrollView(showsIndicators: false) {
+            ScrollView() {
                 LazyVStack(spacing: 0) {
-                    ForEach(viewModel.filteredStations) { station in
-                        StationRowView(station: station)
+                    ForEach(viewModel.filteredCities) { city in
+                        CityRowView(city: city)
+                            .onTapGesture {
+                                proceedWithCityName(city)
+                            }
                     }
                 }
-                if viewModel.filteredStations.isEmpty {
-                    Text("Станция не найдена")
+                if viewModel.filteredCities.isEmpty {
+                    Text("Город не найден")
                         .font(.bold24)
                         .foregroundStyle(.blackUniversal)
                         .padding(.top, 192)
                 }
             }
+            .scrollIndicators(.hidden)
         }
         .padding(.horizontal, 16)
-        .navigationTitle("Выбор станции").navigationBarTitleDisplayMode(.inline)
+        .navigationTitle("Выбор города").navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
-                Button(
-                    action: {
-                        path.removeLast()
-                    }, label: {
-                        Image(.chevronBack)
-                    }
-                )
+                Button(action: {
+                    router.returnBack()
+                }, label: {
+                    Image(.chevronBack)
+                })
             }
         }
+    }
+    
+    private func proceedWithCityName(_ city: City) {
+        switch direction {
+        case .from:
+            cityName = city.name
+        case .to:
+            cityName = city.name
+        }
+        router.path.append(ScheduleRouter.NavigationFlow.stations(direction))
     }
 }
 
 #Preview {
-    StationsView(path: .constant([]))
+    CitiesView(
+        viewModel: CityViewModel(),
+        cityName: .constant(""),
+        direction: .from)
 }
