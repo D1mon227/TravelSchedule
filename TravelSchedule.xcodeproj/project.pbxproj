@@ -23,6 +23,7 @@
 		073EAED32BDBFDF100170FE0 /* CarriersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073EAED22BDBFDF100170FE0 /* CarriersView.swift */; };
 		073EAED52BDBFE0500170FE0 /* CarrierRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073EAED42BDBFE0500170FE0 /* CarrierRowView.swift */; };
 		073EAED72BDBFF7900170FE0 /* CarrierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073EAED62BDBFF7900170FE0 /* CarrierViewModel.swift */; };
+		073EAEDF2BDCFA5300170FE0 /* CarrierInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073EAEDE2BDCFA5300170FE0 /* CarrierInfoView.swift */; };
 		07493AC92BA5E006000281E7 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07493AC82BA5E006000281E7 /* Resources.swift */; };
 		07493ACC2BA5E091000281E7 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07493ACB2BA5E091000281E7 /* NetworkClient.swift */; };
 		07493ACE2BA5E0CA000281E7 /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07493ACD2BA5E0CA000281E7 /* NetworkClientProtocol.swift */; };
@@ -58,6 +59,7 @@
 		073EAED22BDBFDF100170FE0 /* CarriersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarriersView.swift; sourceTree = "<group>"; };
 		073EAED42BDBFE0500170FE0 /* CarrierRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierRowView.swift; sourceTree = "<group>"; };
 		073EAED62BDBFF7900170FE0 /* CarrierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierViewModel.swift; sourceTree = "<group>"; };
+		073EAEDE2BDCFA5300170FE0 /* CarrierInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierInfoView.swift; sourceTree = "<group>"; };
 		07493AC82BA5E006000281E7 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		07493ACB2BA5E091000281E7 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		07493ACD2BA5E0CA000281E7 /* NetworkClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientProtocol.swift; sourceTree = "<group>"; };
@@ -150,8 +152,24 @@
 			children = (
 				073EAED22BDBFDF100170FE0 /* CarriersView.swift */,
 				073EAED42BDBFE0500170FE0 /* CarrierRowView.swift */,
+				073EAEDC2BDCFA3100170FE0 /* CarrierInfo */,
 			);
 			path = Carriers;
+			sourceTree = "<group>";
+		};
+		073EAEDB2BDCFA1800170FE0 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		073EAEDC2BDCFA3100170FE0 /* CarrierInfo */ = {
+			isa = PBXGroup;
+			children = (
+				073EAEDE2BDCFA5300170FE0 /* CarrierInfoView.swift */,
+			);
+			path = CarrierInfo;
 			sourceTree = "<group>";
 		};
 		07493AC52BA5DF9F000281E7 /* Generated */ = {
@@ -187,6 +205,7 @@
 				0705F8072BD98E3500785A26 /* Stations */,
 				0705F7E62BD822B200785A26 /* Cities */,
 				073EAED12BDBFC0B00170FE0 /* Carriers */,
+				073EAEDB2BDCFA1800170FE0 /* Filters */,
 				074FE6012BCBE8DE006C65E6 /* SettingsScreen */,
 			);
 			path = View;
@@ -353,6 +372,7 @@
 				074FE5F12BCBDD68006C65E6 /* MainScreenView.swift in Sources */,
 				07EB612C2B94861400407959 /* ContentView.swift in Sources */,
 				0705F7F12BD824A900785A26 /* CitiesView.swift in Sources */,
+				073EAEDF2BDCFA5300170FE0 /* CarrierInfoView.swift in Sources */,
 				074FE60A2BCBEAB5006C65E6 /* ScheduleRouter.swift in Sources */,
 				0705F8222BDA902700785A26 /* MainScreenViewModel.swift in Sources */,
 				0705F8092BD98E5600785A26 /* StationRowView.swift in Sources */,

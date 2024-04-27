@@ -57,7 +57,8 @@ struct MainScreenView: View {
                                  stationName: direction == .from ? $viewModel.fromDirection : $viewModel.toDirection,
                                  direction: direction)
                 case .carriers:
-                    CarriersView(viewModel: CarrierViewModel())
+                    CarriersView(viewModel: CarrierViewModel(),
+                                 title: (viewModel.fromDirection, viewModel.toDirection))
                 }
             }
         }

@@ -8,6 +8,10 @@ final class ScheduleRouter: ObservableObject {
         case carriers
     }
     
+    enum CarrierFlow: Hashable {
+        case carrierInfo
+    }
+    
     @Published var path = NavigationPath()
     
     func returnBack() {

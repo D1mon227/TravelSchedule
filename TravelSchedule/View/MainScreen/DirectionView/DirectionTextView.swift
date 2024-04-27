@@ -22,7 +22,7 @@ struct DirectionTextView: View {
                    minHeight: 48,
                    alignment: .leading)
             .padding(.leading, 16)
-            .foregroundStyle(directionText == "" ? .grayUniversal : .blackUniversal)
+            .foregroundStyle(directionText == "" ? .grayUniversal : .black)
             .lineLimit(1)
             .font(.regular17)
             .onTapGesture {

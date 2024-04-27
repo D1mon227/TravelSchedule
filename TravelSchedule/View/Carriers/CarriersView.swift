@@ -4,10 +4,12 @@ struct CarriersView: View {
     @EnvironmentObject var router: ScheduleRouter
     @ObservedObject var viewModel: CarrierViewModel
     
+    var title: (String, String)
+    
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
-                Text("Москва (Ярославский вокзал) → Санкт Петербург (Балтийский вокзал)")
+                Text("\(title.0) → \(title.1))")
                     .font(.bold24)
                     .padding(.horizontal, 16)
                     .padding(.bottom, 8)
@@ -17,6 +19,9 @@ struct CarriersView: View {
                         ForEach(viewModel.filteredCarriers) { carrier in
                             CarrierRowView(carrier: carrier)
                                 .clipShape(RoundedRectangle(cornerRadius: 24))
+                                .onTapGesture {
+                                    router.path.append(ScheduleRouter.CarrierFlow.carrierInfo)
+                                }
                         }
                     }
                     .padding([.horizontal, .bottom], 16)
@@ -52,9 +57,15 @@ struct CarriersView: View {
 
             }
         }
+        .navigationDestination(for: ScheduleRouter.CarrierFlow.self) { id in
+            switch id {
+            case .carrierInfo:
+                CarrierInfoView()
+            }
+        }
     }
 }
 
 #Preview {
-    CarriersView(viewModel: CarrierViewModel())
+    CarriersView(viewModel: CarrierViewModel(), title: ("Москва", "Питер"))
 }
