@@ -1,12 +1,19 @@
 import Foundation
 
 final class CarrierViewModel: ObservableObject {
+    @Published var filteredOptions: [FilterSchedule] = []
+    @Published var isShowTransferOptions: Bool?
+    
     private var carriers: [Carrier] = []
     var filteredCarriers: [Carrier] = []
     
     init() {
         self.carriers = getCarriers()
         self.filteredCarriers = carriers
+    }
+    
+    func apply(_ options: [FilterSchedule]) {
+        filteredOptions = options
     }
     
     private func getCarriers() -> [Carrier] {

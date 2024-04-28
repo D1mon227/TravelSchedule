@@ -9,6 +9,7 @@ final class ScheduleRouter: ObservableObject {
     }
     
     enum CarrierFlow: Hashable {
+        case filters
         case carrierInfo
     }
     

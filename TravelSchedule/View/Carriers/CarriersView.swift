@@ -2,17 +2,18 @@ import SwiftUI
 
 struct CarriersView: View {
     @EnvironmentObject var router: ScheduleRouter
-    @ObservedObject var viewModel: CarrierViewModel
+    @StateObject var viewModel: CarrierViewModel
     
     var title: (String, String)
     
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
-                Text("\(title.0) → \(title.1))")
+                Text("\(title.0) → \(title.1)")
                     .font(.bold24)
                     .padding(.horizontal, 16)
                     .padding(.bottom, 8)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 
                 ScrollView {
                     LazyVStack(spacing: 8) {
@@ -30,20 +31,33 @@ struct CarriersView: View {
                 .scrollIndicators(.hidden)
             }
             
-            VStack {
-                Spacer()
-                Button {
-                    
-                } label: {
-                    Text("Уточнить время")
-                        .font(.bold17)
-                        .foregroundStyle(.white)
+            ZStack {
+                VStack {
+                    Spacer()
+                    Button {
+                        router.path.append(ScheduleRouter.CarrierFlow.filters)
+                    } label: {
+                        if !viewModel.filteredOptions.isEmpty || viewModel.isShowTransferOptions != nil {
+                            HStack(spacing: 4) {
+                                Text("Уточнить время")
+                                    .font(.bold17)
+                                    .foregroundStyle(.white)
+                                Text("●")
+                                    .font(.system(size: 10))
+                                    .foregroundStyle(.redUniversal)
+                            }
+                        } else {
+                            Text("Уточнить время")
+                                .font(.bold17)
+                                .foregroundStyle(.white)
+                        }
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: 60)
+                    .background(Color.blueUniversal)
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                    .padding(.horizontal, 16)
+                    .padding(.bottom, 24)
                 }
-                .frame(maxWidth: .infinity, maxHeight: 60)
-                .background(Color.blueUniversal)
-                .clipShape(RoundedRectangle(cornerRadius: 16))
-                .padding(.horizontal, 16)
-                .padding(.bottom, 24)
             }
         }
         .navigationBarBackButtonHidden()
@@ -61,6 +75,9 @@ struct CarriersView: View {
             switch id {
             case .carrierInfo:
                 CarrierInfoView()
+            case .filters:
+                FiltersView(viewModel: viewModel,
+                            isShowTransferOptions: $viewModel.isShowTransferOptions)
             }
         }
     }

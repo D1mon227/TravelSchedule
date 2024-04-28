@@ -1,4 +1,4 @@
-import SwiftUI
+import Foundation
 
 final class MainScreenViewModel: ObservableObject {
     @Published var fromDirection: String = ""
