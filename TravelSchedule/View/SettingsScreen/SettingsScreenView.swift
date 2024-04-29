@@ -45,7 +45,7 @@ struct SettingsScreenView: View {
         .navigationDestination(for: ScheduleRouter.Settings.self) { id in
             switch id {
             case .agreement:
-                AgreementView(urlString: "https://yandex.ru/legal/practicum_offer")
+                AgreementView(urlString: Resources.agreement)
             }
         }
     }
