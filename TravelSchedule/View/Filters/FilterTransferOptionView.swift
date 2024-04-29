@@ -7,7 +7,7 @@ struct FilterTransferOptionView: View {
     
     var body: some View {
         HStack {
-            Text(isShowTitle ? "Да" : "Нет")
+            Text(isShowTitle ? LocalizableConstants.Filter.yes : LocalizableConstants.Filter.no)
                 .font(.regular17)
                 .foregroundStyle(.blackUniversal)
             

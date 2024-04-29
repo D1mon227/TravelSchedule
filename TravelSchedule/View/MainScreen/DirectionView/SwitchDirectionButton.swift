@@ -9,7 +9,9 @@ struct SwitchDirectionButton: View {
         } label: {
             Image(.switchDirection)
         }
-        .frame(width: 36, height: 36)
+        .frame(width: 36,height: 36)
+        .background(.white)
+        .foregroundStyle(.blueUniversal)
         .clipShape(RoundedRectangle(cornerRadius: 18))
     }
 }

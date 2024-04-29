@@ -14,7 +14,7 @@ struct CitiesView: View {
                 Image(systemName: "magnifyingglass")
                     .foregroundStyle(searchText.isEmpty ? .grayUniversal : .blackUniversal)
                     .padding(.leading, 8)
-                TextField("Введите запрос",
+                TextField(LocalizableConstants.City.request,
                           text: $searchText).onChange(of: searchText) { newValue in
                     viewModel.onTextChanged(newValue)
                 }
@@ -32,7 +32,7 @@ struct CitiesView: View {
                 }
             }
             .frame(height: 36)
-            .background(Color.lightGrayUniversal)
+            .background(.lightGrayUniversal)
             .clipShape(RoundedRectangle(cornerRadius: 10))
             
             ScrollView() {
@@ -45,7 +45,7 @@ struct CitiesView: View {
                     }
                 }
                 if viewModel.filteredCities.isEmpty {
-                    Text("Город не найден")
+                    Text(LocalizableConstants.City.notFound)
                         .font(.bold24)
                         .foregroundStyle(.blackUniversal)
                         .padding(.top, 192)
@@ -54,7 +54,7 @@ struct CitiesView: View {
             .scrollIndicators(.hidden)
         }
         .padding(.horizontal, 16)
-        .navigationTitle("Выбор города").navigationBarTitleDisplayMode(.inline)
+        .navigationTitle(LocalizableConstants.City.title).navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {

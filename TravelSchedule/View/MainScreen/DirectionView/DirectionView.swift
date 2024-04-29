@@ -11,7 +11,7 @@ struct DirectionView: View {
                 }
                 .frame(maxWidth: .infinity,
                        minHeight: 96)
-                .background(Color.white)
+                .background(.white)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 SwitchDirectionButton()
             }

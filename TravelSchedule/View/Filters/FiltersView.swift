@@ -38,12 +38,12 @@ struct FiltersView: View {
                         viewModel.apply(viewModel.filteredOptions)
                         router.returnBack()
                     } label: {
-                        Text("Применить")
+                        Text(LocalizableConstants.Filter.apply)
                             .font(.bold17)
                             .foregroundStyle(.white)
                     }
                     .frame(maxWidth: .infinity, maxHeight: 60)
-                    .background(Color.blueUniversal)
+                    .background(.blueUniversal)
                     .clipShape(RoundedRectangle(cornerRadius: 16))
                     .padding(.horizontal, 16)
                     .padding(.bottom, 24)

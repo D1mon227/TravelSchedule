@@ -39,7 +39,7 @@ struct CarriersView: View {
                     } label: {
                         if !viewModel.filteredOptions.isEmpty || viewModel.isShowTransferOptions != nil {
                             HStack(spacing: 4) {
-                                Text("Уточнить время")
+                                Text(LocalizableConstants.Schedule.time)
                                     .font(.bold17)
                                     .foregroundStyle(.white)
                                 Text("●")
@@ -47,13 +47,13 @@ struct CarriersView: View {
                                     .foregroundStyle(.redUniversal)
                             }
                         } else {
-                            Text("Уточнить время")
+                            Text(LocalizableConstants.Schedule.time)
                                 .font(.bold17)
                                 .foregroundStyle(.white)
                         }
                     }
                     .frame(maxWidth: .infinity, maxHeight: 60)
-                    .background(Color.blueUniversal)
+                    .background(.blueUniversal)
                     .clipShape(RoundedRectangle(cornerRadius: 16))
                     .padding(.horizontal, 16)
                     .padding(.bottom, 24)

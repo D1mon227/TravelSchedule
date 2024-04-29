@@ -55,7 +55,7 @@ struct CarrierRowView: View {
             }
             .frame(height: 104)
         }
-        .background(Color.lightGrayDay)
+        .background(.lightGrayDay)
     }
 }
 

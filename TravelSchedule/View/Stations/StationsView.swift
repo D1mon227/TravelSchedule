@@ -14,7 +14,7 @@ struct StationsView: View {
                 Image(systemName: "magnifyingglass")
                     .foregroundStyle(searchText.isEmpty ? .grayUniversal : .blackUniversal)
                     .padding(.leading, 8)
-                TextField("Введите запрос",
+                TextField(LocalizableConstants.City.request,
                           text: $searchText).onChange(of: searchText) { newValue in
                     viewModel.onTextChanged(newValue)
                 }
@@ -32,7 +32,7 @@ struct StationsView: View {
                 }
             }
             .frame(height: 36)
-            .background(Color.lightGrayUniversal)
+            .background(.lightGrayUniversal)
             .clipShape(RoundedRectangle(cornerRadius: 10))
             
             ScrollView() {
@@ -45,7 +45,7 @@ struct StationsView: View {
                     }
                 }
                 if viewModel.filteredStations.isEmpty {
-                    Text("Станция не найдена")
+                    Text(LocalizableConstants.Station.notFound)
                         .font(.bold24)
                         .foregroundStyle(.blackUniversal)
                         .padding(.top, 192)
@@ -54,7 +54,7 @@ struct StationsView: View {
             .scrollIndicators(.hidden)
         }
         .padding(.horizontal, 16)
-        .navigationTitle("Выбор станции").navigationBarTitleDisplayMode(.inline)
+        .navigationTitle(LocalizableConstants.Station.title).navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {

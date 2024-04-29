@@ -9,12 +9,10 @@ struct DirectionTextView: View {
     @EnvironmentObject var router: ScheduleRouter
     @EnvironmentObject var viewModel: MainScreenViewModel
     
-//    @Binding var directionText: String
-    
     var direction: Direction
     
     var body: some View {
-        let placeholder = direction == .from ? "Откуда" : "Куда"
+        let placeholder = direction == .from ? LocalizableConstants.MainScreen.from : LocalizableConstants.MainScreen.to
         let directionText = direction == .from ? viewModel.fromDirection : viewModel.toDirection
         
         Text(directionText == "" ? placeholder : directionText)

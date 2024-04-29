@@ -13,6 +13,10 @@ final class ScheduleRouter: ObservableObject {
         case carrierInfo
     }
     
+    enum Settings: Hashable {
+        case agreement
+    }
+    
     @Published var path = NavigationPath()
     
     func returnBack() {

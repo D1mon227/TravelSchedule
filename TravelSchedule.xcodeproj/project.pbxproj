@@ -41,6 +41,10 @@
 		074FE6032BCBE8F4006C65E6 /* DirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE6022BCBE8F4006C65E6 /* DirectionView.swift */; };
 		074FE6062BCBE967006C65E6 /* DirectionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE6052BCBE967006C65E6 /* DirectionTextView.swift */; };
 		074FE60A2BCBEAB5006C65E6 /* ScheduleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE6092BCBEAB5006C65E6 /* ScheduleRouter.swift */; };
+		075DB2AF2BDF02EC00F6BCBD /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DB2AE2BDF02EC00F6BCBD /* WebView.swift */; };
+		075DB2B32BDF0B0600F6BCBD /* AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DB2B22BDF0B0600F6BCBD /* AgreementView.swift */; };
+		075DB2BB2BDF226A00F6BCBD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 075DB2B92BDF226A00F6BCBD /* Localizable.strings */; };
+		075DB2C02BDF84C300F6BCBD /* LocalizableConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DB2BF2BDF84C300F6BCBD /* LocalizableConstants.swift */; };
 		07EB612A2B94861400407959 /* TravelScheduleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB61292B94861400407959 /* TravelScheduleApp.swift */; };
 		07EB612C2B94861400407959 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB612B2B94861400407959 /* ContentView.swift */; };
 		07EB612E2B94861600407959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07EB612D2B94861600407959 /* Assets.xcassets */; };
@@ -80,6 +84,11 @@
 		074FE6022BCBE8F4006C65E6 /* DirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionView.swift; sourceTree = "<group>"; };
 		074FE6052BCBE967006C65E6 /* DirectionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionTextView.swift; sourceTree = "<group>"; };
 		074FE6092BCBEAB5006C65E6 /* ScheduleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRouter.swift; sourceTree = "<group>"; };
+		075DB2AE2BDF02EC00F6BCBD /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		075DB2B22BDF0B0600F6BCBD /* AgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementView.swift; sourceTree = "<group>"; };
+		075DB2BA2BDF226A00F6BCBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		075DB2BE2BDF22B500F6BCBD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		075DB2BF2BDF84C300F6BCBD /* LocalizableConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableConstants.swift; sourceTree = "<group>"; };
 		07EB61262B94861400407959 /* TravelSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EB61292B94861400407959 /* TravelScheduleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelScheduleApp.swift; sourceTree = "<group>"; };
 		07EB612B2B94861400407959 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -199,6 +208,7 @@
 		07493AC72BA5DFD0000281E7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				075DB2BC2BDF228000F6BCBD /* Localizable */,
 				07493AC82BA5E006000281E7 /* Resources.swift */,
 			);
 			path = Resources;
@@ -222,6 +232,7 @@
 				073EAED12BDBFC0B00170FE0 /* Carriers */,
 				073EAEDB2BDCFA1800170FE0 /* Filters */,
 				074FE6012BCBE8DE006C65E6 /* SettingsScreen */,
+				075DB2AA2BDF01D500F6BCBD /* WebView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -249,6 +260,24 @@
 				074FE5F32BCBDD79006C65E6 /* SettingsScreenView.swift */,
 			);
 			path = SettingsScreen;
+			sourceTree = "<group>";
+		};
+		075DB2AA2BDF01D500F6BCBD /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				075DB2AE2BDF02EC00F6BCBD /* WebView.swift */,
+				075DB2B22BDF0B0600F6BCBD /* AgreementView.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		075DB2BC2BDF228000F6BCBD /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				075DB2BF2BDF84C300F6BCBD /* LocalizableConstants.swift */,
+				075DB2B92BDF226A00F6BCBD /* Localizable.strings */,
+			);
+			path = Localizable;
 			sourceTree = "<group>";
 		};
 		07EB611D2B94861400407959 = {
@@ -342,6 +371,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 07EB611D2B94861400407959;
 			packageReferences = (
@@ -364,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07EB61312B94861600407959 /* Preview Assets.xcassets in Resources */,
+				075DB2BB2BDF226A00F6BCBD /* Localizable.strings in Resources */,
 				070D505F2BA0AA5E003A90B2 /* openapi-generator-config.yaml in Resources */,
 				07EB612E2B94861600407959 /* Assets.xcassets in Resources */,
 				0705F7E02BD814B600785A26 /* Launch Screen.storyboard in Resources */,
@@ -379,6 +410,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				074FE6032BCBE8F4006C65E6 /* DirectionView.swift in Sources */,
+				075DB2AF2BDF02EC00F6BCBD /* WebView.swift in Sources */,
+				075DB2C02BDF84C300F6BCBD /* LocalizableConstants.swift in Sources */,
 				07493ACC2BA5E091000281E7 /* NetworkClient.swift in Sources */,
 				073EAED52BDBFE0500170FE0 /* CarrierRowView.swift in Sources */,
 				073EAEE52BDD1D0900170FE0 /* FilterHeaderView.swift in Sources */,
@@ -408,6 +441,7 @@
 				07EB612A2B94861400407959 /* TravelScheduleApp.swift in Sources */,
 				07493ACE2BA5E0CA000281E7 /* NetworkClientProtocol.swift in Sources */,
 				0705F8052BD98E0000785A26 /* Station.swift in Sources */,
+				075DB2B32BDF0B0600F6BCBD /* AgreementView.swift in Sources */,
 				074FE5F42BCBDD79006C65E6 /* SettingsScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,12 +455,25 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		075DB2B92BDF226A00F6BCBD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				075DB2BA2BDF226A00F6BCBD /* en */,
+				075DB2BE2BDF22B500F6BCBD /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		07EB61322B94861600407959 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -490,6 +537,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

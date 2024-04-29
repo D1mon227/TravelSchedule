@@ -15,7 +15,7 @@ struct CarrierInfoView: View {
                         .font(.bold24)
                         .foregroundStyle(.blackUniversal)
                     VStack(alignment: .leading) {
-                        Text("E-mail")
+                        Text(LocalizableConstants.Carrier.email)
                             .font(.regular17)
                             .foregroundStyle(.blackUniversal)
                         Text("i.lozgkina@yandex.ru")
@@ -24,7 +24,7 @@ struct CarrierInfoView: View {
                     }
                     .frame(maxHeight: 60)
                     VStack(alignment: .leading) {
-                        Text("Телефон")
+                        Text(LocalizableConstants.Carrier.phone)
                             .font(.regular17)
                             .foregroundStyle(.blackUniversal)
                         Text("+7 (904) 329-27-71")
@@ -39,7 +39,7 @@ struct CarrierInfoView: View {
             Spacer()
         }
         .padding(.top, 16)
-        .navigationTitle("Информация о перевозчике")
+        .navigationTitle(LocalizableConstants.Carrier.title)
         .navigationBarBackButtonHidden()
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {

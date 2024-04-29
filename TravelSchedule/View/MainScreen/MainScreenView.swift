@@ -16,12 +16,12 @@ struct MainScreenView: View {
                         Button {
                             router.path.append(ScheduleRouter.NavigationFlow.carriers)
                         } label: {
-                            Text("Найти")
+                            Text(LocalizableConstants.MainScreen.find)
                                 .font(.bold17)
                                 .foregroundStyle(.white)
                         }
                         .frame(maxWidth: 150, maxHeight: 60)
-                        .background(Color.blueUniversal)
+                        .background(.blueUniversal)
                         .clipShape(RoundedRectangle(cornerRadius: 16))
                         .padding(.top, 16)
                     }

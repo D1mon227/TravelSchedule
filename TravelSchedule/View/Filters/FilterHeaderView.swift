@@ -6,9 +6,9 @@ struct FilterHeaderView: View {
     var body: some View {
         let title = switch header {
         case .departureTime:
-            "Время отправления"
+            LocalizableConstants.Filter.departureTime
         case .showOptionWithTransfer:
-            "Показывать варианты с пересадками"
+            LocalizableConstants.Filter.showOptionsWithLayovers
         }
         
         HStack {

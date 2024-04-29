@@ -10,13 +10,13 @@ struct FilterScheduleOptionView: View {
         HStack {
             let schedule = switch option {
             case .morning:
-                "Утро 06:00 - 12:00"
+                LocalizableConstants.Filter.morning
             case .afternoon:
-                "День 12:00 - 18:00"
+                LocalizableConstants.Filter.afternoon
             case .evening:
-                "Вечер 18:00 - 00:00"
+                LocalizableConstants.Filter.evening
             case .night:
-                "Вечер 18:00 - 00:00"
+                LocalizableConstants.Filter.night
             }
             
             Text(schedule)
