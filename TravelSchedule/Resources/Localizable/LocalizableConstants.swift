@@ -53,4 +53,9 @@ enum LocalizableConstants {
     enum Agreement {
         static let title = NSLocalizedString("settings.userAgreement", comment: "")
     }
+    
+    enum Error {
+        static let noInternet = NSLocalizedString("error.noInternet", comment: "")
+        static let server = NSLocalizedString("error.server", comment: "")
+    }
 }

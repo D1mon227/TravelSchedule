@@ -45,6 +45,8 @@
 		075DB2B32BDF0B0600F6BCBD /* AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DB2B22BDF0B0600F6BCBD /* AgreementView.swift */; };
 		075DB2BB2BDF226A00F6BCBD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 075DB2B92BDF226A00F6BCBD /* Localizable.strings */; };
 		075DB2C02BDF84C300F6BCBD /* LocalizableConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DB2BF2BDF84C300F6BCBD /* LocalizableConstants.swift */; };
+		075DB2C32BE00C6A00F6BCBD /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DB2C22BE00C6A00F6BCBD /* ErrorView.swift */; };
+		075DB2C62BE00D2700F6BCBD /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DB2C52BE00D2700F6BCBD /* Error.swift */; };
 		07EB612A2B94861400407959 /* TravelScheduleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB61292B94861400407959 /* TravelScheduleApp.swift */; };
 		07EB612C2B94861400407959 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB612B2B94861400407959 /* ContentView.swift */; };
 		07EB612E2B94861600407959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07EB612D2B94861600407959 /* Assets.xcassets */; };
@@ -89,6 +91,8 @@
 		075DB2BA2BDF226A00F6BCBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		075DB2BE2BDF22B500F6BCBD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		075DB2BF2BDF84C300F6BCBD /* LocalizableConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableConstants.swift; sourceTree = "<group>"; };
+		075DB2C22BE00C6A00F6BCBD /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		075DB2C52BE00D2700F6BCBD /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		07EB61262B94861400407959 /* TravelSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EB61292B94861400407959 /* TravelScheduleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelScheduleApp.swift; sourceTree = "<group>"; };
 		07EB612B2B94861400407959 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 				0705F8042BD98E0000785A26 /* Station.swift */,
 				073EAECE2BDBF99900170FE0 /* Carrier.swift */,
 				073EAEE82BDD228F00170FE0 /* Filter.swift */,
+				075DB2C52BE00D2700F6BCBD /* Error.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 				073EAEDB2BDCFA1800170FE0 /* Filters */,
 				074FE6012BCBE8DE006C65E6 /* SettingsScreen */,
 				075DB2AA2BDF01D500F6BCBD /* WebView */,
+				075DB2C12BE00C3D00F6BCBD /* Error */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,6 +284,14 @@
 				075DB2B92BDF226A00F6BCBD /* Localizable.strings */,
 			);
 			path = Localizable;
+			sourceTree = "<group>";
+		};
+		075DB2C12BE00C3D00F6BCBD /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				075DB2C22BE00C6A00F6BCBD /* ErrorView.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 		07EB611D2B94861400407959 = {
@@ -425,6 +439,7 @@
 				07EB612C2B94861400407959 /* ContentView.swift in Sources */,
 				0705F7F12BD824A900785A26 /* CitiesView.swift in Sources */,
 				073EAEDF2BDCFA5300170FE0 /* CarrierInfoView.swift in Sources */,
+				075DB2C62BE00D2700F6BCBD /* Error.swift in Sources */,
 				074FE60A2BCBEAB5006C65E6 /* ScheduleRouter.swift in Sources */,
 				0705F8222BDA902700785A26 /* MainScreenViewModel.swift in Sources */,
 				0705F8092BD98E5600785A26 /* StationRowView.swift in Sources */,
@@ -434,6 +449,7 @@
 				0705F80C2BD9903200785A26 /* StationsView.swift in Sources */,
 				073EAED72BDBFF7900170FE0 /* CarrierViewModel.swift in Sources */,
 				073EAECF2BDBF99900170FE0 /* Carrier.swift in Sources */,
+				075DB2C32BE00C6A00F6BCBD /* ErrorView.swift in Sources */,
 				0705F7E92BD8237400785A26 /* CityRowView.swift in Sources */,
 				073EAEE92BDD228F00170FE0 /* Filter.swift in Sources */,
 				0705F7D62BD805B800785A26 /* SwitchDirectionButton.swift in Sources */,

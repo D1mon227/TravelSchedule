@@ -37,3 +37,7 @@
 "settings.userAgreement" = "User agreement";
 "settings.apiYandexSchedule" = "App uses API «Yandex.Schedule»";
 "settings.version" = "Version 1.0 (beta)";
+
+//MARK: Error
+"error.noInternet" = "No internet";
+"error.server" = "Server error";

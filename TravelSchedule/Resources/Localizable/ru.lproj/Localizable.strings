@@ -37,3 +37,7 @@
 "settings.userAgreement" = "Пользовательское соглашение";
 "settings.apiYandexSchedule" = "Приложение использует API «Яндекс.Расписания»";
 "settings.version" = "Версия 1.0 (beta)";
+
+//MARK: Error
+"error.noInternet" = "Нет интернета";
+"error.server" = "Ошибка сервера";
