@@ -17,7 +17,7 @@ struct FilterHeaderView: View {
                 .foregroundStyle(.blackUniversal)
             Spacer()
         }
-        .padding(.horizontal, 16)
+        .padding(.horizontal, UIConstants.baseInset)
     }
 }
 

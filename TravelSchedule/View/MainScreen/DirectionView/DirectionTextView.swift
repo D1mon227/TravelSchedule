@@ -17,9 +17,9 @@ struct DirectionTextView: View {
         
         Text(directionText == "" ? placeholder : directionText)
             .frame(maxWidth: .infinity,
-                   minHeight: 48,
+                   minHeight: UIConstants.DirectionView.textHeight,
                    alignment: .leading)
-            .padding(.leading, 16)
+            .padding(.leading, UIConstants.baseInset)
             .foregroundStyle(directionText == "" ? .grayUniversal : .black)
             .lineLimit(1)
             .font(.regular17)

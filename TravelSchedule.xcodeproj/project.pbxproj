@@ -47,6 +47,7 @@
 		075DB2C02BDF84C300F6BCBD /* LocalizableConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DB2BF2BDF84C300F6BCBD /* LocalizableConstants.swift */; };
 		075DB2C32BE00C6A00F6BCBD /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DB2C22BE00C6A00F6BCBD /* ErrorView.swift */; };
 		075DB2C62BE00D2700F6BCBD /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DB2C52BE00D2700F6BCBD /* Error.swift */; };
+		075DB2C82BE22A2800F6BCBD /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DB2C72BE22A2800F6BCBD /* UIConstants.swift */; };
 		07EB612A2B94861400407959 /* TravelScheduleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB61292B94861400407959 /* TravelScheduleApp.swift */; };
 		07EB612C2B94861400407959 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB612B2B94861400407959 /* ContentView.swift */; };
 		07EB612E2B94861600407959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07EB612D2B94861600407959 /* Assets.xcassets */; };
@@ -93,6 +94,7 @@
 		075DB2BF2BDF84C300F6BCBD /* LocalizableConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableConstants.swift; sourceTree = "<group>"; };
 		075DB2C22BE00C6A00F6BCBD /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		075DB2C52BE00D2700F6BCBD /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		075DB2C72BE22A2800F6BCBD /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		07EB61262B94861400407959 /* TravelSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EB61292B94861400407959 /* TravelScheduleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelScheduleApp.swift; sourceTree = "<group>"; };
 		07EB612B2B94861400407959 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 			children = (
 				075DB2BC2BDF228000F6BCBD /* Localizable */,
 				07493AC82BA5E006000281E7 /* Resources.swift */,
+				075DB2C72BE22A2800F6BCBD /* UIConstants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				0705F7F12BD824A900785A26 /* CitiesView.swift in Sources */,
 				073EAEDF2BDCFA5300170FE0 /* CarrierInfoView.swift in Sources */,
 				075DB2C62BE00D2700F6BCBD /* Error.swift in Sources */,
+				075DB2C82BE22A2800F6BCBD /* UIConstants.swift in Sources */,
 				074FE60A2BCBEAB5006C65E6 /* ScheduleRouter.swift in Sources */,
 				0705F8222BDA902700785A26 /* MainScreenViewModel.swift in Sources */,
 				0705F8092BD98E5600785A26 /* StationRowView.swift in Sources */,

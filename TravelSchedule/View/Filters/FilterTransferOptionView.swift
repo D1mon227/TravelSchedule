@@ -15,19 +15,22 @@ struct FilterTransferOptionView: View {
             
             ZStack {
                 Circle()
-                    .strokeBorder(.blackUniversal, lineWidth: 2.5)
-                    .frame(width: 20, height: 20)
+                    .strokeBorder(.blackUniversal, lineWidth: UIConstants.FilterTransferOptionView.strokeBorder)
+                    .frame(width: UIConstants.FilterTransferOptionView.circleWidth,
+                           height: UIConstants.FilterTransferOptionView.circleWidth)
                     .foregroundStyle(.whiteUniversal)
                 
                 Circle()
-                    .frame(width: 10, height: 10)
+                    .frame(width: UIConstants.FilterView.inSideRectangleCircleWidth,
+                           height: UIConstants.FilterView.inSideRectangleCircleWidth)
                     .foregroundStyle(isShowTransferOptions == nil || isShowTransferOptions != isShowTitle ? .whiteUniversal : .blackUniversal)
                 
             }
         }
-        .frame(maxWidth: .infinity, minHeight: 60)
-        .padding(.leading, 16)
-        .padding(.trailing, 18)
+        .frame(maxWidth: .infinity,
+               minHeight: UIConstants.baseHeight)
+        .padding(.leading, UIConstants.baseInset)
+        .padding(.trailing, UIConstants.FilterTransferOptionView.trailingPadding)
         .onTapGesture {
             withAnimation {
                 changeTransferOption()

@@ -13,7 +13,7 @@ struct SettingsScreenView: View {
                 Toggle(isOn: $isToggleOn) {}
                     .tint(.blueUniversal)
             }
-            .frame(height: 60)
+            .frame(height: UIConstants.baseHeight)
             
             HStack {
                 Text(LocalizableConstants.Settings.userAgreement)
@@ -24,28 +24,29 @@ struct SettingsScreenView: View {
                     }
                 Spacer()
                 Image(.chevronForward)
-                    .frame(width: 24, height: 24)
+                    .frame(width: UIConstants.SettingsScreenView.imageWidth,
+                           height: UIConstants.SettingsScreenView.imageWidth)
             }
-            .frame(height: 60)
+            .frame(height: UIConstants.baseHeight)
             
             Spacer()
             
-            VStack(alignment: .center, spacing: 16) {
+            VStack(alignment: .center, spacing: UIConstants.baseInset) {
                 Text(LocalizableConstants.Settings.apiYandexSchedule)
                 Text(LocalizableConstants.Settings.version)
             }
             .foregroundStyle(.blackUniversal)
             .font(.regular12)
-            .padding(.bottom, 24)
+            .padding(.bottom, UIConstants.SettingsScreenView.bottomTopPadding)
         }
-        .padding(.top, 24)
-        .padding(.horizontal, 16)
+        .padding(.top, UIConstants.SettingsScreenView.bottomTopPadding)
+        .padding(.horizontal, UIConstants.baseInset)
         .padding(.bottom)
         .preferredColorScheme(isToggleOn ? .dark : .light)
         .navigationDestination(for: ScheduleRouter.Settings.self) { id in
             switch id {
             case .agreement:
-                AgreementView(urlString: Resources.agreement)
+                AgreementView(urlString: Resources.agreementLink)
             }
         }
     }

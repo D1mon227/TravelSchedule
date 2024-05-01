@@ -6,13 +6,16 @@ struct CarrierRowView: View {
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
-                HStack(spacing: 8) {
+                HStack(spacing: UIConstants.CarrierRowView.hStackSpacing) {
                     Image(carrier.logo)
                         .resizable()
-                        .frame(width: 38, height: 38)
-                        .clipShape(RoundedRectangle(cornerRadius: 12))
-                        .padding([.leading, .top], 14)
-                    VStack(alignment: .leading, spacing: 2) {
+                        .frame(width: UIConstants.CarrierRowView.imageWidth,
+                               height: UIConstants.CarrierRowView.imageWidth)
+                        .clipShape(
+                            RoundedRectangle(
+                                cornerRadius: UIConstants.CarrierRowView.cornerRadius))
+                        .padding([.leading, .top], UIConstants.CarrierRowView.carrierRowTopPadding)
+                    VStack(alignment: .leading, spacing: UIConstants.CarrierRowView.vStackSpacing) {
                         HStack {
                             Text(carrier.name)
                                 .font(.regular17)
@@ -29,8 +32,8 @@ struct CarrierRowView: View {
                                 .foregroundStyle(.redUniversal)
                         }
                     }
-                    .padding(.trailing, 7)
-                    .padding(.top, 14)
+                    .padding(.trailing, UIConstants.CarrierRowView.carrierRowTrailingPadding)
+                    .padding(.top, UIConstants.CarrierRowView.carrierRowTopPadding)
                     .frame(maxWidth: .infinity)
                 }
                 Spacer()
@@ -51,9 +54,9 @@ struct CarrierRowView: View {
                         .font(.regular17)
                         .foregroundStyle(.black)
                 }
-                .padding(14)
+                .padding(UIConstants.CarrierRowView.carrierRowTopPadding)
             }
-            .frame(height: 104)
+            .frame(height: UIConstants.CarrierRowView.vStackHeight)
         }
         .background(.lightGrayDay)
     }

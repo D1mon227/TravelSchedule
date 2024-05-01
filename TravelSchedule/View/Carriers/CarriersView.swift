@@ -11,22 +11,25 @@ struct CarriersView: View {
             VStack(spacing: 0) {
                 Text("\(title.0) → \(title.1)")
                     .font(.bold24)
-                    .padding(.horizontal, 16)
-                    .padding(.bottom, 8)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, UIConstants.baseInset)
+                    .padding(.bottom, UIConstants.CarriersView.vStackPadding)
+                    .frame(maxWidth: .infinity,
+                           alignment: .leading)
                 
                 ScrollView {
-                    LazyVStack(spacing: 8) {
+                    LazyVStack(spacing: UIConstants.CarriersView.vStackSpacing) {
                         ForEach(viewModel.filteredCarriers) { carrier in
                             CarrierRowView(carrier: carrier)
-                                .clipShape(RoundedRectangle(cornerRadius: 24))
+                                .clipShape(
+                                    RoundedRectangle(
+                                        cornerRadius: UIConstants.CarriersView.cornerRadius))
                                 .onTapGesture {
                                     router.path.append(ScheduleRouter.CarrierFlow.carrierInfo)
                                 }
                         }
                     }
-                    .padding([.horizontal, .bottom], 16)
-                    .padding(.top, 8)
+                    .padding([.horizontal, .bottom], UIConstants.baseInset)
+                    .padding(.top, UIConstants.CarriersView.vStackPadding)
                 }
                 .scrollIndicators(.hidden)
             }
@@ -38,12 +41,12 @@ struct CarriersView: View {
                         router.path.append(ScheduleRouter.CarrierFlow.filters)
                     } label: {
                         if !viewModel.filteredOptions.isEmpty || viewModel.isShowTransferOptions != nil {
-                            HStack(spacing: 4) {
+                            HStack(spacing: UIConstants.CarriersView.hStackSpacing) {
                                 Text(LocalizableConstants.Schedule.time)
                                     .font(.bold17)
                                     .foregroundStyle(.white)
                                 Text("●")
-                                    .font(.system(size: 10))
+                                    .font(.system(size: UIConstants.CarriersView.textHeight))
                                     .foregroundStyle(.redUniversal)
                             }
                         } else {
@@ -52,11 +55,14 @@ struct CarriersView: View {
                                 .foregroundStyle(.white)
                         }
                     }
-                    .frame(maxWidth: .infinity, maxHeight: 60)
+                    .frame(maxWidth: .infinity,
+                           maxHeight: UIConstants.baseHeight)
                     .background(.blueUniversal)
-                    .clipShape(RoundedRectangle(cornerRadius: 16))
-                    .padding(.horizontal, 16)
-                    .padding(.bottom, 24)
+                    .clipShape(
+                        RoundedRectangle(
+                            cornerRadius: UIConstants.CarriersView.buttonCornerRadius))
+                    .padding(.horizontal, UIConstants.baseInset)
+                    .padding(.bottom, UIConstants.CarriersView.bottomPadding)
                 }
             }
         }

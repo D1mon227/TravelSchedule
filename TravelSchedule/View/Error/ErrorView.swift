@@ -5,11 +5,12 @@ struct ErrorView: View {
     var error: ErrorType
     
     var body: some View {
-        VStack(spacing: 16) {
+        VStack(spacing: UIConstants.baseInset) {
             Image(error == .noInternet ? .noInternet : .server)
                 .resizable()
-                .frame(width: 223, height: 223)
-                .clipShape(RoundedRectangle(cornerRadius: 70))
+                .frame(width: UIConstants.ErrorView.imageWidth,
+                       height: UIConstants.ErrorView.imageWidth)
+                .clipShape(RoundedRectangle(cornerRadius: UIConstants.ErrorView.cornerRadius))
             Text(error == .noInternet ? LocalizableConstants.Error.noInternet : LocalizableConstants.Error.server)
                 .font(.bold24)
                 .foregroundStyle(.blackUniversal)

@@ -9,10 +9,13 @@ struct SwitchDirectionButton: View {
         } label: {
             Image(.switchDirection)
         }
-        .frame(width: 36,height: 36)
+        .frame(width: UIConstants.DirectionView.buttonWidth,
+               height: UIConstants.DirectionView.buttonWidth)
         .background(.white)
         .foregroundStyle(.blueUniversal)
-        .clipShape(RoundedRectangle(cornerRadius: 18))
+        .clipShape(
+            RoundedRectangle(
+                cornerRadius: UIConstants.DirectionView.buttonCornerRadius))
     }
 }
 

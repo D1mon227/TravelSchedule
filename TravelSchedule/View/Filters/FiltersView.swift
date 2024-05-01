@@ -29,7 +29,7 @@ struct FiltersView: View {
                 }
                 Spacer()
             }
-            .padding(.top, 16)
+            .padding(.top, UIConstants.baseInset)
             
             if isShowTransferOptions != nil {
                 VStack {
@@ -42,11 +42,12 @@ struct FiltersView: View {
                             .font(.bold17)
                             .foregroundStyle(.white)
                     }
-                    .frame(maxWidth: .infinity, maxHeight: 60)
+                    .frame(maxWidth: .infinity,
+                           maxHeight: UIConstants.baseHeight)
                     .background(.blueUniversal)
-                    .clipShape(RoundedRectangle(cornerRadius: 16))
-                    .padding(.horizontal, 16)
-                    .padding(.bottom, 24)
+                    .clipShape(RoundedRectangle(cornerRadius: UIConstants.FilterView.cornerRadius))
+                    .padding(.horizontal, UIConstants.baseInset)
+                    .padding(.bottom, UIConstants.FilterView.bottomPadding)
                 }
             }
         }

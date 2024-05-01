@@ -13,12 +13,12 @@ struct StationsView: View {
             HStack {
                 Image(systemName: "magnifyingglass")
                     .foregroundStyle(searchText.isEmpty ? .grayUniversal : .blackUniversal)
-                    .padding(.leading, 8)
+                    .padding(.leading, UIConstants.StationView.leadingPadding)
                 TextField(LocalizableConstants.City.request,
                           text: $searchText).onChange(of: searchText) { newValue in
                     viewModel.onTextChanged(newValue)
                 }
-                          .padding(.vertical, 8)
+                          .padding(.vertical, UIConstants.StationView.leadingPadding)
                 if !searchText.isEmpty {
                     Button(
                         action: {
@@ -28,12 +28,14 @@ struct StationsView: View {
                             Image(systemName: "xmark.circle.fill")
                                 .foregroundStyle(.grayUniversal)
                         }
-                        .padding(.trailing, 6)
+                        .padding(.trailing, UIConstants.StationView.trailingPadding)
                 }
             }
-            .frame(height: 36)
+            .frame(height: UIConstants.StationView.textFieldHeight)
             .background(.lightGrayUniversal)
-            .clipShape(RoundedRectangle(cornerRadius: 10))
+            .clipShape(
+                RoundedRectangle(
+                    cornerRadius: UIConstants.StationView.cornerRadius))
             
             ScrollView() {
                 LazyVStack(spacing: 0) {
@@ -48,12 +50,12 @@ struct StationsView: View {
                     Text(LocalizableConstants.Station.notFound)
                         .font(.bold24)
                         .foregroundStyle(.blackUniversal)
-                        .padding(.top, 192)
+                        .padding(.top, UIConstants.StationView.topPadding)
                 }
             }
             .scrollIndicators(.hidden)
         }
-        .padding(.horizontal, 16)
+        .padding(.horizontal, UIConstants.baseInset)
         .navigationTitle(LocalizableConstants.Station.title).navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
         .toolbar {

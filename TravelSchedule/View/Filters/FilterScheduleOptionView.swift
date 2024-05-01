@@ -27,10 +27,13 @@ struct FilterScheduleOptionView: View {
             
             ZStack {
                 Rectangle()
-                    .frame(width: 20, height: 20)
+                    .frame(width: UIConstants.FilterScheduleOptionView.rectangleWidth,
+                           height: UIConstants.FilterScheduleOptionView.rectangleWidth)
                     .foregroundStyle(isSelected ? .blackUniversal : .whiteUniversal)
-                    .border(.blackUniversal, width: 2.5)
-                    .clipShape(RoundedRectangle(cornerRadius: 4))
+                    .border(.blackUniversal, width: UIConstants.FilterScheduleOptionView.borderWidth)
+                    .clipShape(
+                        RoundedRectangle(
+                            cornerRadius: UIConstants.FilterScheduleOptionView.rectangleCornerRadius))
                 
                 if isSelected {
                     Text("✓")
@@ -39,9 +42,10 @@ struct FilterScheduleOptionView: View {
                 }
             }
         }
-        .frame(maxWidth: .infinity, minHeight: 60)
-        .padding(.leading, 16)
-        .padding(.trailing, 18)
+        .frame(maxWidth: .infinity,
+               minHeight: UIConstants.baseHeight)
+        .padding(.leading, UIConstants.baseInset)
+        .padding(.trailing, UIConstants.FilterScheduleOptionView.trailingPadding)
         .onTapGesture {
             withAnimation {
                 changeScheduleOption()

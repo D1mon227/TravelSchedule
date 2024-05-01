@@ -4,11 +4,12 @@ struct CarrierInfoView: View {
     @EnvironmentObject var router: ScheduleRouter
     
     var body: some View {
-        VStack(spacing: 16) {
+        VStack(spacing: UIConstants.baseInset) {
             Image(.rzhdFull)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 343, height: 104)
+                .frame(width: UIConstants.CarrierInfoView.width,
+                       height: UIConstants.CarrierInfoView.height)
             HStack {
                 VStack(alignment: .leading) {
                     Text("ОАО «РЖД»")
@@ -22,7 +23,7 @@ struct CarrierInfoView: View {
                             .font(.regular12)
                             .foregroundStyle(.blueUniversal)
                     }
-                    .frame(maxHeight: 60)
+                    .frame(maxHeight: UIConstants.baseHeight)
                     VStack(alignment: .leading) {
                         Text(LocalizableConstants.Carrier.phone)
                             .font(.regular17)
@@ -31,14 +32,14 @@ struct CarrierInfoView: View {
                             .font(.regular12)
                             .foregroundStyle(.blueUniversal)
                     }
-                    .frame(maxHeight: 60)
+                    .frame(maxHeight: UIConstants.baseHeight)
                 }
                 Spacer()
             }
-            .padding(.horizontal, 16)
+            .padding(.horizontal, UIConstants.baseInset)
             Spacer()
         }
-        .padding(.top, 16)
+        .padding(.top, UIConstants.baseInset)
         .navigationTitle(LocalizableConstants.Carrier.title)
         .navigationBarBackButtonHidden()
         .toolbar {

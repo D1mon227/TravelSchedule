@@ -10,7 +10,7 @@ struct CityRowView: View {
             Spacer()
             Image(.chevronForward)
         }
-        .frame(height: 60)
+        .frame(height: UIConstants.baseHeight)
     }
 }
 

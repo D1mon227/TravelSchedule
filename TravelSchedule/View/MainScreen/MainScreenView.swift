@@ -20,10 +20,13 @@ struct MainScreenView: View {
                                 .font(.bold17)
                                 .foregroundStyle(.white)
                         }
-                        .frame(maxWidth: 150, maxHeight: 60)
+                        .frame(maxWidth: UIConstants.MainScreenView.findButtonWidth,
+                               maxHeight: UIConstants.baseHeight)
                         .background(.blueUniversal)
-                        .clipShape(RoundedRectangle(cornerRadius: 16))
-                        .padding(.top, 16)
+                        .clipShape(
+                            RoundedRectangle(
+                                cornerRadius: UIConstants.MainScreenView.cornerRadius))
+                        .padding(.top, UIConstants.baseInset)
                     }
                     
                     Spacer()
@@ -33,7 +36,7 @@ struct MainScreenView: View {
                     Image(selectedTab == 0 ? .selectedTabBarItem1 : .tabBarItem1)
                 }
                 .tag(0)
-                .padding(.bottom, 10)
+                .padding(.bottom, UIConstants.MainScreenView.bottomInset)
                 
                 VStack {
                     SettingsScreenView()
@@ -43,7 +46,7 @@ struct MainScreenView: View {
                     Image(selectedTab == 1 ? .selectedTabBarItem2 : .tabBarItem2)
                 }
                 .tag(1)
-                .padding(.bottom, 10)
+                .padding(.bottom, UIConstants.MainScreenView.bottomInset)
             }
             .environmentObject(viewModel)
             .navigationDestination(for: ScheduleRouter.NavigationFlow.self) { id in
