@@ -8,8 +8,9 @@ struct CarrierInfoView: View {
             Image(.rzhdFull)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: UIConstants.CarrierInfoView.width,
-                       height: UIConstants.CarrierInfoView.height)
+                .frame(minWidth: UIConstants.CarrierInfoView.width,
+                       minHeight: UIConstants.CarrierInfoView.height)
+                .padding(.horizontal, UIConstants.baseInset)
             HStack {
                 VStack(alignment: .leading) {
                     Text("ОАО «РЖД»")
@@ -49,7 +50,6 @@ struct CarrierInfoView: View {
                 } label: {
                     Image(.chevronBack)
                 }
-
             }
         }
     }

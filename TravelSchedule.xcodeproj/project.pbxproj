@@ -240,7 +240,7 @@
 				073EAED12BDBFC0B00170FE0 /* Carriers */,
 				073EAEDB2BDCFA1800170FE0 /* Filters */,
 				074FE6012BCBE8DE006C65E6 /* SettingsScreen */,
-				075DB2AA2BDF01D500F6BCBD /* WebView */,
+				075DB2AA2BDF01D500F6BCBD /* AgreementView */,
 				075DB2C12BE00C3D00F6BCBD /* Error */,
 			);
 			path = View;
@@ -271,13 +271,13 @@
 			path = SettingsScreen;
 			sourceTree = "<group>";
 		};
-		075DB2AA2BDF01D500F6BCBD /* WebView */ = {
+		075DB2AA2BDF01D500F6BCBD /* AgreementView */ = {
 			isa = PBXGroup;
 			children = (
 				075DB2AE2BDF02EC00F6BCBD /* WebView.swift */,
 				075DB2B22BDF0B0600F6BCBD /* AgreementView.swift */,
 			);
-			path = WebView;
+			path = AgreementView;
 			sourceTree = "<group>";
 		};
 		075DB2BC2BDF228000F6BCBD /* Localizable */ = {
