@@ -23,6 +23,7 @@ struct DirectionTextView: View {
             .foregroundStyle(directionText == "" ? .grayUniversal : .black)
             .lineLimit(1)
             .font(.regular17)
+            .contentShape(Rectangle())
             .onTapGesture {
                 router.path.append(ScheduleRouter.NavigationFlow.cities(direction))
             }
