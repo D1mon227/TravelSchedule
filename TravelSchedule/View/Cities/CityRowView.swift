@@ -11,6 +11,7 @@ struct CityRowView: View {
             Image(.chevronForward)
         }
         .frame(height: UIConstants.baseHeight)
+        .contentShape(Rectangle())
     }
 }
 
