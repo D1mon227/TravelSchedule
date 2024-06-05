@@ -48,10 +48,12 @@
 		075DB2C32BE00C6A00F6BCBD /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DB2C22BE00C6A00F6BCBD /* ErrorView.swift */; };
 		075DB2C62BE00D2700F6BCBD /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DB2C52BE00D2700F6BCBD /* Error.swift */; };
 		075DB2C82BE22A2800F6BCBD /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DB2C72BE22A2800F6BCBD /* UIConstants.swift */; };
+		07D777352C0B1B1E00ED94DA /* TimerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D777342C0B1B1E00ED94DA /* TimerConfiguration.swift */; };
+		07D7773F2C10C60000ED94DA /* StoriesProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D7773E2C10C60000ED94DA /* StoriesProgressBar.swift */; };
+		07D777432C10C8D400ED94DA /* StoriesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D777422C10C8D400ED94DA /* StoriesTabView.swift */; };
 		07DE32DF2C0A070A00841D64 /* PreviewStoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE32DE2C0A070A00841D64 /* PreviewStoryRowView.swift */; };
 		07DE32E12C0A0E2300841D64 /* PreviewStoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE32E02C0A0E2300841D64 /* PreviewStoriesView.swift */; };
 		07DE32E52C0A0EBC00841D64 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE32E42C0A0EBC00841D64 /* Story.swift */; };
-		07DE32E82C0A0F1300841D64 /* StoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE32E72C0A0F1300841D64 /* StoryViewModel.swift */; };
 		07DE32F02C0A692800841D64 /* FullScreenStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE32EF2C0A692800841D64 /* FullScreenStoryView.swift */; };
 		07DE32FF2C0A7D0100841D64 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE32FE2C0A7D0100841D64 /* ProgressBarView.swift */; };
 		07DE33072C0A88AB00841D64 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE33062C0A88AB00841D64 /* CloseButton.swift */; };
@@ -103,10 +105,12 @@
 		075DB2C22BE00C6A00F6BCBD /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		075DB2C52BE00D2700F6BCBD /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		075DB2C72BE22A2800F6BCBD /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		07D777342C0B1B1E00ED94DA /* TimerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerConfiguration.swift; sourceTree = "<group>"; };
+		07D7773E2C10C60000ED94DA /* StoriesProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesProgressBar.swift; sourceTree = "<group>"; };
+		07D777422C10C8D400ED94DA /* StoriesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesTabView.swift; sourceTree = "<group>"; };
 		07DE32DE2C0A070A00841D64 /* PreviewStoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewStoryRowView.swift; sourceTree = "<group>"; };
 		07DE32E02C0A0E2300841D64 /* PreviewStoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewStoriesView.swift; sourceTree = "<group>"; };
 		07DE32E42C0A0EBC00841D64 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
-		07DE32E72C0A0F1300841D64 /* StoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewModel.swift; sourceTree = "<group>"; };
 		07DE32EF2C0A692800841D64 /* FullScreenStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenStoryView.swift; sourceTree = "<group>"; };
 		07DE32FE2C0A7D0100841D64 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		07DE33062C0A88AB00841D64 /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 				073EAEE82BDD228F00170FE0 /* Filter.swift */,
 				075DB2C52BE00D2700F6BCBD /* Error.swift */,
 				07DE32E42C0A0EBC00841D64 /* Story.swift */,
+				07D777342C0B1B1E00ED94DA /* TimerConfiguration.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,7 +184,6 @@
 				0705F80F2BD9906A00785A26 /* StationViewModel.swift */,
 				0705F8212BDA902700785A26 /* MainScreenViewModel.swift */,
 				073EAED62BDBFF7900170FE0 /* CarrierViewModel.swift */,
-				07DE32E72C0A0F1300841D64 /* StoryViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -316,14 +320,24 @@
 			path = Error;
 			sourceTree = "<group>";
 		};
+		07D777412C10C60800ED94DA /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				07D7773E2C10C60000ED94DA /* StoriesProgressBar.swift */,
+				07DE32FE2C0A7D0100841D64 /* ProgressBarView.swift */,
+			);
+			path = ProgressBar;
+			sourceTree = "<group>";
+		};
 		07DE32DD2C0A06A300841D64 /* Stories */ = {
 			isa = PBXGroup;
 			children = (
 				07DE32ED2C0A68FA00841D64 /* Preview */,
+				07D777412C10C60800ED94DA /* ProgressBar */,
 				07DE32EF2C0A692800841D64 /* FullScreenStoryView.swift */,
 				07DE33092C0A9A9500841D64 /* StoryView.swift */,
-				07DE32FE2C0A7D0100841D64 /* ProgressBarView.swift */,
 				07DE33062C0A88AB00841D64 /* CloseButton.swift */,
+				07D777422C10C8D400ED94DA /* StoriesTabView.swift */,
 			);
 			path = Stories;
 			sourceTree = "<group>";
@@ -480,6 +494,7 @@
 				0705F7F32BD824D200785A26 /* CityViewModel.swift in Sources */,
 				074FE5F12BCBDD68006C65E6 /* MainScreenView.swift in Sources */,
 				070F118D2BDD3DEC00D90FD3 /* FilterTransferOptionView.swift in Sources */,
+				07D777352C0B1B1E00ED94DA /* TimerConfiguration.swift in Sources */,
 				07DE32FF2C0A7D0100841D64 /* ProgressBarView.swift in Sources */,
 				07EB612C2B94861400407959 /* ContentView.swift in Sources */,
 				0705F7F12BD824A900785A26 /* CitiesView.swift in Sources */,
@@ -491,10 +506,10 @@
 				0705F8222BDA902700785A26 /* MainScreenViewModel.swift in Sources */,
 				0705F8092BD98E5600785A26 /* StationRowView.swift in Sources */,
 				0705F7EE2BD8246200785A26 /* City.swift in Sources */,
+				07D777432C10C8D400ED94DA /* StoriesTabView.swift in Sources */,
 				074FE5FD2BCBE5AD006C65E6 /* Font + Extension.swift in Sources */,
 				074FE6062BCBE967006C65E6 /* DirectionTextView.swift in Sources */,
 				07DE33072C0A88AB00841D64 /* CloseButton.swift in Sources */,
-				07DE32E82C0A0F1300841D64 /* StoryViewModel.swift in Sources */,
 				0705F80C2BD9903200785A26 /* StationsView.swift in Sources */,
 				07DE32DF2C0A070A00841D64 /* PreviewStoryRowView.swift in Sources */,
 				073EAED72BDBFF7900170FE0 /* CarrierViewModel.swift in Sources */,
@@ -504,6 +519,7 @@
 				0705F7E92BD8237400785A26 /* CityRowView.swift in Sources */,
 				073EAEE92BDD228F00170FE0 /* Filter.swift in Sources */,
 				0705F7D62BD805B800785A26 /* SwitchDirectionButton.swift in Sources */,
+				07D7773F2C10C60000ED94DA /* StoriesProgressBar.swift in Sources */,
 				0705F8102BD9906A00785A26 /* StationViewModel.swift in Sources */,
 				07EB612A2B94861400407959 /* TravelScheduleApp.swift in Sources */,
 				07493ACE2BA5E0CA000281E7 /* NetworkClientProtocol.swift in Sources */,

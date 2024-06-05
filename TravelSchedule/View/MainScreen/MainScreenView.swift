@@ -10,7 +10,7 @@ struct MainScreenView: View {
         NavigationStack(path: $router.path) {
             TabView(selection: $selectedTab) {
                 VStack(spacing: 0) {
-                    PreviewStoriesView(viewModel: StoryViewModel())
+                    PreviewStoriesView(viewModel: viewModel)
                     DirectionView()
                         .padding(.top, 20)
                     

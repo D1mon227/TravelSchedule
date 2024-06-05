@@ -8,31 +8,43 @@ struct StoryView: View {
             Color.storyBackground
                 .ignoresSafeArea()
             
-            Image(story.image)
-                .resizable()
-                .clipShape(
-                    RoundedRectangle(
-                        cornerRadius: 40))
-            
-            VStack(alignment: .leading, spacing: 16) {
-                Spacer()
-                Text(story.text)
-                    .font(.bold34)
-                    .lineLimit(2)
-                Text(story.description)
-                    .font(.regular20)
-                    .lineLimit(3)
+            if let image = story.fullImage {
+                Image(image)
+                    .resizable()
+                    .clipShape(
+                        RoundedRectangle(
+                            cornerRadius: 40))
             }
-            .foregroundStyle(.white)
-            .frame(maxWidth: .infinity)
-            .padding(.horizontal, UIConstants.baseInset)
-            .padding(.bottom, 40)
         }
+        .overlay(
+            VStack {
+                Spacer()
+                VStack(alignment: .leading, spacing: 16) {
+                    if let title = story.title {
+                        Text(title)
+                            .font(.bold34)
+                            .lineLimit(2)
+                    }
+                    
+                    if let description = story.description {
+                        Text(description)
+                            .font(.regular20)
+                            .lineLimit(3)
+                    }
+                }
+                .foregroundStyle(.white)
+                .padding(.horizontal, UIConstants.baseInset)
+                .padding(.bottom, 40)
+            }
+        )
     }
 }
 
 #Preview {
-    StoryView(story: Story(image: "StoryDemo5",
-                           text: "Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text",
-                           description: "Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text"))
+    StoryView(story: Story(id: 1,
+                           previewImage: "StoryPreview5",
+                           fullImage: "StoryDemo5",
+                           title: "Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text ",
+                           description: "Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text",
+                           isViewed: false))
 }

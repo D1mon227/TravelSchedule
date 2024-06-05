@@ -5,24 +5,35 @@ struct PreviewStoryRowView: View {
     
     var body: some View {
         ZStack(alignment: .bottomLeading) {
-            Image(story.image)
-                .resizable()
-                .frame(width: 92, height: 140)
-                .clipShape(RoundedRectangle(cornerRadius: 16))
-                .overlay(RoundedRectangle(cornerRadius: 16).strokeBorder(.blueUniversal, lineWidth: 4))
-            Text(story.text)
-                .font(.regular12)
-                .foregroundStyle(.white)
-                .frame(width: 76, height: 45)
-                .padding(.horizontal, 8)
-                .padding(.bottom, 12)
-                .lineLimit(3)
+            if let image = story.previewImage {
+                Image(image)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                    .opacity(story.isViewed ? 0.5 : 1)
+                    .overlay(
+                        !story.isViewed ? RoundedRectangle(cornerRadius: 16).strokeBorder(.blueUniversal, lineWidth: 4) : nil
+                    )
+            }
+            
+            if let title = story.title {
+                Text(title)
+                    .font(.regular12)
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, 8)
+                    .padding(.bottom, 12)
+                    .lineLimit(3)
+            }
         }
+        .frame(width: 92, height: 140)
     }
 }
 
 #Preview {
-    PreviewStoryRowView(story: Story(image: "StoryPreview5",
-                              text: "Text Text Text Text Text Text Text",
-                              description: "Text Text Text"))
+    PreviewStoryRowView(story: Story(id: 1,
+                                     previewImage: "StoryPreview5",
+                                     fullImage: "StoryDemo5",
+                                     title: "Text Text Text Text Text Text Text",
+                                     description: "Text Text Text",
+                                     isViewed: false))
 }

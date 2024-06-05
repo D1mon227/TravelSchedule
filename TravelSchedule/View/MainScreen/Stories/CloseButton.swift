@@ -1,9 +1,11 @@
 import SwiftUI
 
 struct CloseButton: View {
+    @Environment (\.dismiss) private var dismiss
+    
     var body: some View {
         Button {
-            print("CLose story")
+            dismiss()
         } label: {
             Image("CloseButton")
         }
