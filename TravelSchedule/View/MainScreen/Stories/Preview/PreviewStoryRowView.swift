@@ -9,10 +9,12 @@ struct PreviewStoryRowView: View {
                 Image(image)
                     .resizable()
                     .scaledToFit()
-                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                    .clipShape(
+                        RoundedRectangle(
+                            cornerRadius: UIConstants.StoriesScreenView.storyPreviewCornerRadius))
                     .opacity(story.isViewed ? 0.5 : 1)
                     .overlay(
-                        !story.isViewed ? RoundedRectangle(cornerRadius: 16).strokeBorder(.blueUniversal, lineWidth: 4) : nil
+                        !story.isViewed ? RoundedRectangle(cornerRadius: UIConstants.StoriesScreenView.storyPreviewCornerRadius).strokeBorder(.blueUniversal, lineWidth: UIConstants.StoriesScreenView.storyPreviewBorderWidth) : nil
                     )
             }
             
@@ -20,12 +22,13 @@ struct PreviewStoryRowView: View {
                 Text(title)
                     .font(.regular12)
                     .foregroundStyle(.white)
-                    .padding(.horizontal, 8)
-                    .padding(.bottom, 12)
+                    .padding(.horizontal, UIConstants.StoriesScreenView.storyPreviewLeadingInset)
+                    .padding(.bottom, UIConstants.StoriesScreenView.storyPreviewBottomInset)
                     .lineLimit(3)
             }
         }
-        .frame(width: 92, height: 140)
+        .frame(width: UIConstants.StoriesScreenView.storyPreviewWidth,
+               height: UIConstants.StoriesScreenView.storyPreviewHeight)
     }
 }
 

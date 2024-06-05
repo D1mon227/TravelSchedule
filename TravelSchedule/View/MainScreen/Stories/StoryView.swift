@@ -11,15 +11,16 @@ struct StoryView: View {
             if let image = story.fullImage {
                 Image(image)
                     .resizable()
+                    .scaledToFit()
                     .clipShape(
                         RoundedRectangle(
-                            cornerRadius: 40))
+                            cornerRadius: UIConstants.StoriesScreenView.storyImageCornerRadius))
             }
         }
         .overlay(
             VStack {
                 Spacer()
-                VStack(alignment: .leading, spacing: 16) {
+                VStack(alignment: .leading, spacing: UIConstants.StoriesScreenView.storyTitleSpacing) {
                     if let title = story.title {
                         Text(title)
                             .font(.bold34)
@@ -34,7 +35,7 @@ struct StoryView: View {
                 }
                 .foregroundStyle(.white)
                 .padding(.horizontal, UIConstants.baseInset)
-                .padding(.bottom, 40)
+                .padding(.bottom, UIConstants.StoriesScreenView.imageBottomInset)
             }
         )
     }

@@ -10,10 +10,9 @@ struct PreviewStoriesView: View {
     
     var body: some View {
             ScrollView(.horizontal) {
-                LazyHStack(spacing: 12) {
+                LazyHStack(spacing: UIConstants.StoriesScreenView.storyPreviewSpacing) {
                     ForEach(viewModel.stories) { story in
                         PreviewStoryRowView(story: story)
-                            .frame(width: 92, height: 140)
                             .onTapGesture {
                                 currentStoryIndex = story.id
                                 viewModel.stories[story.id].isViewed = true

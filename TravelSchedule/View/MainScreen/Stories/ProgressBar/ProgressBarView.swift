@@ -7,14 +7,14 @@ struct ProgressBarView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: .leading) {
-                RoundedRectangle(cornerRadius: 3)
+                RoundedRectangle(cornerRadius: UIConstants.StoriesScreenView.progressBarCornerRadius)
                     .frame(width: geometry.size.width,
-                           height: 6)
+                           height: UIConstants.StoriesScreenView.progressBarHeight)
                     .foregroundStyle(.white)
-                RoundedRectangle(cornerRadius: 3)
+                RoundedRectangle(cornerRadius: UIConstants.StoriesScreenView.progressBarCornerRadius)
                     .frame(width: min(progress * geometry.size.width,
                                       geometry.size.width),
-                           height: 6)
+                           height: UIConstants.StoriesScreenView.progressBarHeight)
                     .foregroundStyle(.blueUniversal)
             }
             .mask {
@@ -27,7 +27,7 @@ struct ProgressBarView: View {
 private struct MaskView: View {
     var numberOfSections: Int
     var body: some View {
-        HStack(spacing: 6) {
+        HStack(spacing: UIConstants.StoriesScreenView.progressBarSpacing) {
             ForEach(0..<numberOfSections, id: \.self) { _ in
                 MaskFragmentView()
             }
@@ -37,8 +37,8 @@ private struct MaskView: View {
 
 private struct MaskFragmentView: View {
     var body: some View {
-        RoundedRectangle(cornerRadius: 3)
-            .frame(height: 6)
+        RoundedRectangle(cornerRadius: UIConstants.StoriesScreenView.progressBarCornerRadius)
+            .frame(height: UIConstants.StoriesScreenView.progressBarHeight)
             .foregroundStyle(.white)
     }
 }

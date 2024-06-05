@@ -9,11 +9,14 @@ struct CloseButton: View {
         } label: {
             Image("CloseButton")
         }
-        .frame(width: 30, height: 30)
+        .frame(width: UIConstants.StoriesScreenView.closeButtonWidth,
+               height: UIConstants.StoriesScreenView.closeButtonWidth)
         .clipShape(
             RoundedRectangle(
-                cornerRadius: 15))
-        .contentShape(RoundedRectangle(cornerRadius: 15))
+                cornerRadius: UIConstants.StoriesScreenView.closeButtonCornerRadius))
+        .contentShape(
+            RoundedRectangle(
+                cornerRadius: UIConstants.StoriesScreenView.closeButtonCornerRadius))
     }
 }
 
