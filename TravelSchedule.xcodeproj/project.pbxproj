@@ -37,7 +37,7 @@
 		07493ADF2BA5E931000281E7 /* openapi.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 07493ADE2BA5E931000281E7 /* openapi.yaml */; };
 		074FE5F12BCBDD68006C65E6 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE5F02BCBDD68006C65E6 /* MainScreenView.swift */; };
 		074FE5F42BCBDD79006C65E6 /* SettingsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE5F32BCBDD79006C65E6 /* SettingsScreenView.swift */; };
-		074FE5FD2BCBE5AD006C65E6 /* Font + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE5FC2BCBE5AD006C65E6 /* Font + Extensions.swift */; };
+		074FE5FD2BCBE5AD006C65E6 /* Font + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE5FC2BCBE5AD006C65E6 /* Font + Extension.swift */; };
 		074FE6032BCBE8F4006C65E6 /* DirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE6022BCBE8F4006C65E6 /* DirectionView.swift */; };
 		074FE6062BCBE967006C65E6 /* DirectionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE6052BCBE967006C65E6 /* DirectionTextView.swift */; };
 		074FE60A2BCBEAB5006C65E6 /* ScheduleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FE6092BCBEAB5006C65E6 /* ScheduleRouter.swift */; };
@@ -48,6 +48,16 @@
 		075DB2C32BE00C6A00F6BCBD /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DB2C22BE00C6A00F6BCBD /* ErrorView.swift */; };
 		075DB2C62BE00D2700F6BCBD /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DB2C52BE00D2700F6BCBD /* Error.swift */; };
 		075DB2C82BE22A2800F6BCBD /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075DB2C72BE22A2800F6BCBD /* UIConstants.swift */; };
+		07D777352C0B1B1E00ED94DA /* TimerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D777342C0B1B1E00ED94DA /* TimerConfiguration.swift */; };
+		07D7773F2C10C60000ED94DA /* StoriesProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D7773E2C10C60000ED94DA /* StoriesProgressBar.swift */; };
+		07D777432C10C8D400ED94DA /* StoriesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D777422C10C8D400ED94DA /* StoriesTabView.swift */; };
+		07DE32DF2C0A070A00841D64 /* PreviewStoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE32DE2C0A070A00841D64 /* PreviewStoryRowView.swift */; };
+		07DE32E12C0A0E2300841D64 /* PreviewStoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE32E02C0A0E2300841D64 /* PreviewStoriesView.swift */; };
+		07DE32E52C0A0EBC00841D64 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE32E42C0A0EBC00841D64 /* Story.swift */; };
+		07DE32F02C0A692800841D64 /* FullScreenStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE32EF2C0A692800841D64 /* FullScreenStoryView.swift */; };
+		07DE32FF2C0A7D0100841D64 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE32FE2C0A7D0100841D64 /* ProgressBarView.swift */; };
+		07DE33072C0A88AB00841D64 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE33062C0A88AB00841D64 /* CloseButton.swift */; };
+		07DE330A2C0A9A9500841D64 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE33092C0A9A9500841D64 /* StoryView.swift */; };
 		07EB612A2B94861400407959 /* TravelScheduleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB61292B94861400407959 /* TravelScheduleApp.swift */; };
 		07EB612C2B94861400407959 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB612B2B94861400407959 /* ContentView.swift */; };
 		07EB612E2B94861600407959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07EB612D2B94861600407959 /* Assets.xcassets */; };
@@ -83,7 +93,7 @@
 		07493ADE2BA5E931000281E7 /* openapi.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = openapi.yaml; sourceTree = "<group>"; };
 		074FE5F02BCBDD68006C65E6 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		074FE5F32BCBDD79006C65E6 /* SettingsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenView.swift; sourceTree = "<group>"; };
-		074FE5FC2BCBE5AD006C65E6 /* Font + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font + Extensions.swift"; sourceTree = "<group>"; };
+		074FE5FC2BCBE5AD006C65E6 /* Font + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font + Extension.swift"; sourceTree = "<group>"; };
 		074FE6022BCBE8F4006C65E6 /* DirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionView.swift; sourceTree = "<group>"; };
 		074FE6052BCBE967006C65E6 /* DirectionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionTextView.swift; sourceTree = "<group>"; };
 		074FE6092BCBEAB5006C65E6 /* ScheduleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRouter.swift; sourceTree = "<group>"; };
@@ -95,6 +105,16 @@
 		075DB2C22BE00C6A00F6BCBD /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		075DB2C52BE00D2700F6BCBD /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		075DB2C72BE22A2800F6BCBD /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		07D777342C0B1B1E00ED94DA /* TimerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerConfiguration.swift; sourceTree = "<group>"; };
+		07D7773E2C10C60000ED94DA /* StoriesProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesProgressBar.swift; sourceTree = "<group>"; };
+		07D777422C10C8D400ED94DA /* StoriesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesTabView.swift; sourceTree = "<group>"; };
+		07DE32DE2C0A070A00841D64 /* PreviewStoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewStoryRowView.swift; sourceTree = "<group>"; };
+		07DE32E02C0A0E2300841D64 /* PreviewStoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewStoriesView.swift; sourceTree = "<group>"; };
+		07DE32E42C0A0EBC00841D64 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		07DE32EF2C0A692800841D64 /* FullScreenStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenStoryView.swift; sourceTree = "<group>"; };
+		07DE32FE2C0A7D0100841D64 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		07DE33062C0A88AB00841D64 /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
+		07DE33092C0A9A9500841D64 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		07EB61262B94861400407959 /* TravelSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EB61292B94861400407959 /* TravelScheduleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelScheduleApp.swift; sourceTree = "<group>"; };
 		07EB612B2B94861400407959 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -142,6 +162,8 @@
 				073EAECE2BDBF99900170FE0 /* Carrier.swift */,
 				073EAEE82BDD228F00170FE0 /* Filter.swift */,
 				075DB2C52BE00D2700F6BCBD /* Error.swift */,
+				07DE32E42C0A0EBC00841D64 /* Story.swift */,
+				07D777342C0B1B1E00ED94DA /* TimerConfiguration.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -249,7 +271,7 @@
 		074FE5F82BCBE58F006C65E6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				074FE5FC2BCBE5AD006C65E6 /* Font + Extensions.swift */,
+				074FE5FC2BCBE5AD006C65E6 /* Font + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -257,6 +279,7 @@
 		074FE5FF2BCBE8B0006C65E6 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
+				07DE32DD2C0A06A300841D64 /* Stories */,
 				0705F7D42BD8059D00785A26 /* DirectionView */,
 				074FE5F02BCBDD68006C65E6 /* MainScreenView.swift */,
 			);
@@ -295,6 +318,37 @@
 				075DB2C22BE00C6A00F6BCBD /* ErrorView.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		07D777412C10C60800ED94DA /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				07D7773E2C10C60000ED94DA /* StoriesProgressBar.swift */,
+				07DE32FE2C0A7D0100841D64 /* ProgressBarView.swift */,
+			);
+			path = ProgressBar;
+			sourceTree = "<group>";
+		};
+		07DE32DD2C0A06A300841D64 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				07DE32ED2C0A68FA00841D64 /* Preview */,
+				07D777412C10C60800ED94DA /* ProgressBar */,
+				07DE32EF2C0A692800841D64 /* FullScreenStoryView.swift */,
+				07DE33092C0A9A9500841D64 /* StoryView.swift */,
+				07DE33062C0A88AB00841D64 /* CloseButton.swift */,
+				07D777422C10C8D400ED94DA /* StoriesTabView.swift */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		07DE32ED2C0A68FA00841D64 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				07DE32E02C0A0E2300841D64 /* PreviewStoriesView.swift */,
+				07DE32DE2C0A070A00841D64 /* PreviewStoryRowView.swift */,
+			);
+			path = Preview;
 			sourceTree = "<group>";
 		};
 		07EB611D2B94861400407959 = {
@@ -426,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07DE330A2C0A9A9500841D64 /* StoryView.swift in Sources */,
 				074FE6032BCBE8F4006C65E6 /* DirectionView.swift in Sources */,
 				075DB2AF2BDF02EC00F6BCBD /* WebView.swift in Sources */,
 				075DB2C02BDF84C300F6BCBD /* LocalizableConstants.swift in Sources */,
@@ -439,30 +494,39 @@
 				0705F7F32BD824D200785A26 /* CityViewModel.swift in Sources */,
 				074FE5F12BCBDD68006C65E6 /* MainScreenView.swift in Sources */,
 				070F118D2BDD3DEC00D90FD3 /* FilterTransferOptionView.swift in Sources */,
+				07D777352C0B1B1E00ED94DA /* TimerConfiguration.swift in Sources */,
+				07DE32FF2C0A7D0100841D64 /* ProgressBarView.swift in Sources */,
 				07EB612C2B94861400407959 /* ContentView.swift in Sources */,
 				0705F7F12BD824A900785A26 /* CitiesView.swift in Sources */,
 				073EAEDF2BDCFA5300170FE0 /* CarrierInfoView.swift in Sources */,
 				075DB2C62BE00D2700F6BCBD /* Error.swift in Sources */,
+				07DE32F02C0A692800841D64 /* FullScreenStoryView.swift in Sources */,
 				075DB2C82BE22A2800F6BCBD /* UIConstants.swift in Sources */,
 				074FE60A2BCBEAB5006C65E6 /* ScheduleRouter.swift in Sources */,
 				0705F8222BDA902700785A26 /* MainScreenViewModel.swift in Sources */,
 				0705F8092BD98E5600785A26 /* StationRowView.swift in Sources */,
 				0705F7EE2BD8246200785A26 /* City.swift in Sources */,
-				074FE5FD2BCBE5AD006C65E6 /* Font + Extensions.swift in Sources */,
+				07D777432C10C8D400ED94DA /* StoriesTabView.swift in Sources */,
+				074FE5FD2BCBE5AD006C65E6 /* Font + Extension.swift in Sources */,
 				074FE6062BCBE967006C65E6 /* DirectionTextView.swift in Sources */,
+				07DE33072C0A88AB00841D64 /* CloseButton.swift in Sources */,
 				0705F80C2BD9903200785A26 /* StationsView.swift in Sources */,
+				07DE32DF2C0A070A00841D64 /* PreviewStoryRowView.swift in Sources */,
 				073EAED72BDBFF7900170FE0 /* CarrierViewModel.swift in Sources */,
 				073EAECF2BDBF99900170FE0 /* Carrier.swift in Sources */,
 				075DB2C32BE00C6A00F6BCBD /* ErrorView.swift in Sources */,
+				07DE32E12C0A0E2300841D64 /* PreviewStoriesView.swift in Sources */,
 				0705F7E92BD8237400785A26 /* CityRowView.swift in Sources */,
 				073EAEE92BDD228F00170FE0 /* Filter.swift in Sources */,
 				0705F7D62BD805B800785A26 /* SwitchDirectionButton.swift in Sources */,
+				07D7773F2C10C60000ED94DA /* StoriesProgressBar.swift in Sources */,
 				0705F8102BD9906A00785A26 /* StationViewModel.swift in Sources */,
 				07EB612A2B94861400407959 /* TravelScheduleApp.swift in Sources */,
 				07493ACE2BA5E0CA000281E7 /* NetworkClientProtocol.swift in Sources */,
 				0705F8052BD98E0000785A26 /* Station.swift in Sources */,
 				075DB2B32BDF0B0600F6BCBD /* AgreementView.swift in Sources */,
 				074FE5F42BCBDD79006C65E6 /* SettingsScreenView.swift in Sources */,
+				07DE32E52C0A0EBC00841D64 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

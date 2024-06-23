@@ -10,7 +10,9 @@ struct MainScreenView: View {
         NavigationStack(path: $router.path) {
             TabView(selection: $selectedTab) {
                 VStack(spacing: 0) {
+                    PreviewStoriesView(viewModel: viewModel)
                     DirectionView()
+                        .padding(.top, 20)
                     
                     if viewModel.isDirectionsFilled {
                         Button {

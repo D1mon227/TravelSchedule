@@ -8,7 +8,7 @@ struct SwitchDirectionButton: View {
         Button {
             withAnimation {
                 isRotated.toggle()
-                viewModel.switchDirection()
+//                viewModel.switchDirection()
             }
         } label: {
             Image(.switchDirection)
@@ -16,11 +16,10 @@ struct SwitchDirectionButton: View {
         }
         .frame(width: UIConstants.DirectionView.buttonWidth,
                height: UIConstants.DirectionView.buttonWidth)
-        .background(.white)
-        .foregroundStyle(.blueUniversal)
         .clipShape(
             RoundedRectangle(
                 cornerRadius: UIConstants.DirectionView.buttonCornerRadius))
+        .contentShape(RoundedRectangle(cornerRadius: UIConstants.DirectionView.buttonCornerRadius))
     }
 }
 

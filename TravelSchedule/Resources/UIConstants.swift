@@ -10,6 +10,24 @@ enum UIConstants {
         static let cornerRadius: CGFloat = 16
     }
     
+    enum StoriesScreenView {
+        static let progressBarSpacing: CGFloat = 6
+        static let progressBarHeight: CGFloat = 6
+        static let progressBarCornerRadius: CGFloat = 3
+        static let storyImageCornerRadius: CGFloat = 40
+        static let storyTitleSpacing: CGFloat = 16
+        static let imageBottomInset: CGFloat = 40
+        static let storyPreviewSpacing: CGFloat = 12
+        static let storyPreviewCornerRadius: CGFloat = 16
+        static let storyPreviewBottomInset: CGFloat = 12
+        static let storyPreviewLeadingInset: CGFloat = 8
+        static let storyPreviewWidth: CGFloat = 92
+        static let storyPreviewHeight: CGFloat = 140
+        static let storyPreviewBorderWidth: CGFloat = 4
+        static let closeButtonWidth: CGFloat = 30
+        static let closeButtonCornerRadius: CGFloat = 15
+    }
+    
     enum DirectionView {
         static let spacing: CGFloat = 16
         static let stackCornerRadius: CGFloat = 20

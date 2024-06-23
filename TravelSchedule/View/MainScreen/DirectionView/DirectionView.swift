@@ -25,7 +25,6 @@ struct DirectionView: View {
             RoundedRectangle(
                 cornerRadius: UIConstants.DirectionView.stackCornerRadius))
         .padding(.horizontal, UIConstants.baseInset)
-        .padding(.top, UIConstants.DirectionView.topInset)
     }
 }
 
