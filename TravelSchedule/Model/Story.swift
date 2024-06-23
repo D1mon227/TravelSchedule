@@ -7,7 +7,9 @@ struct Story: Identifiable {
     let title: String?
     let description: String?
     var isViewed: Bool
-    
+}
+
+struct MockStories {
     static var stories: [Story] = [
         Story(id: 0, previewImage: "StoryPreview1", fullImage: "StoryDemo1", title: "Text Text Text Text Text Text Text Text Text Text", description: "Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text", isViewed: false),
         Story(id: 1, previewImage: "StoryPreview2", fullImage: "StoryDemo2", title: "Text Text Text Text Text Text Text Text Text Text", description: "Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text", isViewed: false),
